@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import logo from '../../images/gh_logo.svg'
-import {Picture} from '../../utils/Pictures'
+import {Picture} from '../utils/Pictures'
 
 const Header = () => {
   return (
