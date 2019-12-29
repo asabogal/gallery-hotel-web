@@ -1,22 +1,24 @@
 import React from 'react';
 import styled from 'styled-components';
-import logo from '../../images/gh_logo.svg'
-import {Picture} from '../utils/Pictures'
+import {Link} from 'react-router-dom';
+import logo from '../../images/gh_logo.svg';
+import {Picture} from '../utils/Pictures';
+import {Button} from '../utils/Buttons';
 
 const Header = () => {
   return (
     <Container>
       <nav>
-        <li>Home</li>
-        <li>About</li>
-        <li>Rooms</li>
+        <Link to='/about'><li>About</li></Link>
+        <Link to='/rooms'><li>Our Rooms</li></Link>
+        <Link to='/amenities'><li>Amenities</li></Link>
       </nav>
       <div style={{padding: '10px 0px 10px 0px'}}>
-        <Picture logo={logo} height='85px' width='200px'/>
+        <Picture link='/' logo={logo} height='85px' width='200px'/>
       </div>
       <nav>
-        <li>Contact Us</li>
-        <li>Reserve a Room</li>
+        <Link to='/contact'><li>Contact Us</li></Link>
+        <a href='https://clients.innroad.com/gallery/property.aspx'><Button>RESERVE A ROOM</Button></a>
       </nav>
     </Container>
   );
@@ -29,17 +31,30 @@ const Container = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   align-items: center;
-  justify-items: center;
   background: none;
+  font-size: 15px;
+  font-weight: 500;
   :hover {
-    background-color: white;
+    background-color: rgb(245, 247, 250);
   }
   nav {
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  div {
+    justify-self: center;
   }
   li {
     list-style: none;
     text-decoration: none;
-    padding: 30px;
+    padding-bottom: 5px;
+    :hover {
+      border-bottom: 1px solid #002b5c;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: #002b5c;
   }
 `;
