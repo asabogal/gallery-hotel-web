@@ -1,10 +1,8 @@
 body {
   margin: 0;
-  background-color: rgb(204, 210, 223);
+  background-color: rgb(245, 247, 250);
   color: #002b5c;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -12,4 +10,10 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+video {
+  width: 100vw;
+  object-fit: cover;
+  opacity: .9;
 }
