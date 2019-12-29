@@ -1,13 +1,21 @@
 import React from 'react';
-import Header from '../header_footer/Header'
+import styled from 'styled-components';
+import HeadMessage from '../header_footer/HeadMessage';
+import Header from '../header_footer/Header';
 
 const Layout = (props) => {
   return (
-    <div>
+    <Container>
+      <HeadMessage/>
       <Header/>
       {props.children}
-    </div>
+    </Container>
   );
 };
 
 export default Layout;
+
+const Container = styled.div`
+  position: relative;
+  z-index: 999;
+`;
