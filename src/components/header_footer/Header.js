@@ -14,27 +14,9 @@ class Header extends Component {
     };
   }
 
-  componentDidMount() {
-    window.addEventListener('scroll', this.listenToScroll)
-  }
-  
-  componentWillUnmount() {
-    window.removeEventListener('scroll', this.listenToScroll)
-  }
-  
-  listenToScroll = (event) => {
-    let scrollTop = event.srcElement.body.scrollTop
-    let itemTranslate = Math.min(0, scrollTop/3 - 60);
-
-    if (itemTranslate) this.setState({
-      scroll: true
-    });
-    
-  }
-
   render() {
     return (
-      <Container scroll={this.state.scroll}>
+      <Container>
         <nav>
           <Link to='/about'><li>About</li></Link>
           <Link to='/rooms'><li>Our Rooms</li></Link>
@@ -60,15 +42,9 @@ const Container = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   align-items: center;
-  background: none;
+  background-color: rgb(245, 247, 250);
   font-size: 15px;
   font-weight: 500;
-  :hover {
-    background-color: rgb(245, 247, 250);
-    button {
-        display: block;
-      }
-  }
   nav {
     display: flex;
     justify-content: space-evenly;
@@ -88,8 +64,5 @@ const Container = styled.div`
   a {
     text-decoration: none;
     color: #002b5c;
-  }
-  button {
-    display: ${props => props.scroll ? 'block' : 'none'};
   }
 `;
