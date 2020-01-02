@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import Video from '../components/home/Video';
+import Header from '../components/header_footer/Header';
+import HeadMessage from '../components/header_footer/HeadMessage';
 
 class Home extends Component {
   constructor(props) {
@@ -9,9 +11,12 @@ class Home extends Component {
   }
   render() {
     return (
-      <PageContainer>
+      <div>
+        <HeadMessage/>
         <Video/>
-      </PageContainer>
+        <Header/>
+        <PageContainer/>
+      </div>
     );
   }
 }
@@ -19,7 +24,5 @@ class Home extends Component {
 export default Home;
 
 const PageContainer = styled.div`
-  position: absolute;
-  top: 0;
-  z-index: -1;
+  padding: 10px;
 `;
