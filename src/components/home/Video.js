@@ -18,7 +18,6 @@ const VideoContainer = styled.div`
   min-width: 100%; 
   min-height: 80%;
   width: auto; 
-  height: 80vh; 
   z-index: -100;
   background-size: cover;
   overflow: hidden;
