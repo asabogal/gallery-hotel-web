@@ -14,9 +14,11 @@ const NavHeader = () => {
       <LogoContainer>
         <img src={logo} alt='hotel-logo'/>
       </LogoContainer>
-      <div>
-      <a href='https://clients.innroad.com/gallery/property.aspx' style={{paddingLeft: '40px'}}><Button>RESERVE A ROOM</Button></a>
-      </div>
+      <ReserveContainer>
+        <a href='https://clients.innroad.com/gallery/property.aspx'>
+          <Button width='160px'>BOOK A ROOM</Button>
+        </a>
+      </ReserveContainer>
     </Container>
   );
 };
@@ -24,27 +26,35 @@ const NavHeader = () => {
 export default NavHeader;
 
 const Container = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  padding: 10px 30px;
-  background-color: white;
+  z-index: 900;
+  margin: 5px 50px;
 `;
 
 const MenuBtnContainer = styled.div`
+justify-self: start;
   display: flex;
   align-items: center;
   p {
-    padding-left: 10px;
+    margin-left: 10px;
   }
   
 `;
 
 const LogoContainer = styled.div`
+  justify-self: center;
+  padding-right: 20px;
   height: auto;
   width: 200px;
   img {
     width: 100%;
     height: auto;
   }
+`;
+
+const ReserveContainer = styled.div`
+  justify-self: flex-end;
 `;
