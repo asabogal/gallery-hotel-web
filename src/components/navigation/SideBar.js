@@ -18,8 +18,8 @@ const Container = styled.div`
   height: 100%;
   width: 3rem;
   display: flex;
-  justify-content: start;
-  align-content: center;
+  align-items: center;
+  justify-content: center;
   background-color: white;
   z-index: 900;
 `;
