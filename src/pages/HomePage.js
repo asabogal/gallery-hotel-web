@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Video from '../components/home/Video';
 import Header from '../components/header_footer/Header';
 import HeadMessage from '../components/header_footer/HeadMessage';
+import FeaturedSection from '../components/home/FeaturedSection';
 
 class Home extends Component {
   constructor(props) {
@@ -13,9 +14,11 @@ class Home extends Component {
     return (
       <div>
         <HeadMessage/>
-        <Video/>
         <Header/>
-        <PageContainer/>
+        <Video/>
+        <PageContainer>
+          <FeaturedSection left/>
+        </PageContainer>
       </div>
     );
   }
