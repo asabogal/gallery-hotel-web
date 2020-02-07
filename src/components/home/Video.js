@@ -21,4 +21,7 @@ const VideoContainer = styled.div`
   z-index: -100;
   background-size: cover;
   overflow: hidden;
+  video {
+    height: auto;
+  }
 `;
