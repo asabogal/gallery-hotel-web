@@ -1,10 +1,12 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 export const Button = styled.button`
   background-color: ${(props => props.background || '#002b5c')};
   color: ${(props => props.color || 'white')};
-  font-size: ${(props => props.font || '15px')};
+  font-size: ${(props => props.font || '12px')};
   height: ${(props => props.height || '45px')};
   width: ${(props => props.width || '180px')};
   border: none;
@@ -25,6 +27,10 @@ export const MenuButton = () => {
   )
 }
 
+const BtnContainer = styled.div`
+  cursor: pointer;
+`;
+
 const MenuBtn = styled.div`
   cursor: pointer;
   div {
@@ -40,4 +46,24 @@ const MenuBtn = styled.div`
       margin: 7px 0;
     }
   }
+`;
+
+export const CloseButton = (props) => {
+  return (
+    <CloseBtn>
+      <FontAwesomeIcon 
+        icon={faTimes} 
+        size={props.size} 
+        color={props.color}
+        onClick={props.click}
+      />
+    </CloseBtn>
+  );
+};
+
+const CloseBtn = styled(BtnContainer)`
+  margin: 20px 20px 10px 0px;
+  :hover {
+    transform: scale(1.3)
+    }
 `;
