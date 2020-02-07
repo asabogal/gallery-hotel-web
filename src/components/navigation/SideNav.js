@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {CloseButton} from '../utils/Buttons';
+import {Link} from 'react-router-dom';
 
 const SideNav = (props) => {
   return (
@@ -11,6 +12,31 @@ const SideNav = (props) => {
           click={props.click}
         />
       </BtnContainer>
+      <section onClick={props.click}>
+        <Link to='/'>HOME</Link>
+      </section>
+      <section onClick={props.click}>
+        <Link to='/'>RESERVE</Link>
+      </section>
+      <section onClick={props.click}>
+        <Link to='/amenities'>AMENITIES</Link>
+      </section>
+      <section onClick={props.click}>
+        <Link to='/rooms'>ROOMS</Link>
+      </section>
+      <section onClick={props.click}>
+        <Link to='/events_blocks'>EVENTS & ROOM BLOCKS</Link>
+      </section>
+      <section onClick={props.click}>
+        <Link to='/food_drinks'>FOOD & DRINKS</Link>
+      </section>
+      <section onClick={props.click}>
+        <Link to='/location'>LOCATION</Link>
+      </section>
+      <section onClick={props.click}>
+        <Link to='/contact'>CONTACT US</Link>
+      </section>
+      
       
     </Container>
   );
@@ -32,18 +58,16 @@ const Container = styled.section`
   position: fixed;
   top: 0;
   left: 0;
-  width: 25%;
+  width: 30vw;
   min-width: 300px;
   z-index: 999;
   transform: ${props => props.open ? 'translateX(0)' : 'translateX(-100%)'};
   transition: transform 0.15s ease-out;
   section {
-    display: grid;
-    grid-template-columns: 30px 100px;
     align-items: center;
     padding-left:30px;
     :hover {
-      background-color: #1F5061;
+      background-color: #153963;
       cursor: pointer;
     }
   }
