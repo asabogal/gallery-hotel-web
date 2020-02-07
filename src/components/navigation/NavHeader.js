@@ -4,10 +4,10 @@ import {MenuButton} from '../utils/Buttons';
 import logo from '../../images/gh_logo.svg';
 import {Button} from '../utils/Buttons';
 
-const NavHeader = () => {
+const NavHeader = (props) => {
   return (
     <Container>
-      <MenuBtnContainer>
+      <MenuBtnContainer onClick={props.toggleSideNav}>
         <MenuButton/>
         <p>Menu</p>
       </MenuBtnContainer>
