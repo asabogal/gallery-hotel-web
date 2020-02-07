@@ -10,9 +10,10 @@ const TopSection = () => {
     <Container>
       <NavHeader/>
       <SideBar side='left'>
-        <SocialBar/>
+        
       </SideBar>
       <SideBar side='right'>
+        <SocialBar size='lg'/>
       </SideBar>
       <Video/>
     </Container>

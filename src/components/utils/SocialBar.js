@@ -44,7 +44,7 @@ const Container = styled.div`
   align-items: center;
   a {
     color: inherit;
-    padding: 15px 0px;
+    padding: 18px 0px;
     cursor: pointer;
   }
 `;
