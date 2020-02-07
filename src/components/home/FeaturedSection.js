@@ -1,10 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import facade from '../../images/home/FACADE1.jpg';
 
-const FeaturedSection = ({title, description, links}) => {
+const FeaturedSection = ({title, description, links, image, side}) => {
   return (
-    <Wrapper>
+    <Wrapper side={side}>
       <TextContainer>
         <h1>{title}</h1>
         <h5>
@@ -12,12 +11,18 @@ const FeaturedSection = ({title, description, links}) => {
         </h5>
         <ul>
           {
-            links.map(link => <Links key={link}>{link}</Links>)
+            Object.entries(links).map(([link, icon]) => {
+              if (icon && typeof icon !== 'number') {
+                return <Links key={link}><img src={icon} alt='icon'/> {link}</Links>
+              } else {
+                return <Links key={link}><span>*</span> {link}</Links>
+              }
+            })
           }
         </ul>
       </TextContainer>
       <ImageContainer>
-        <img src={facade} alt='hotel-property'/>
+        <img src={image} alt='featured'/>
       </ImageContainer>
     </Wrapper>
   );
@@ -28,11 +33,11 @@ export default FeaturedSection;
 const Wrapper = styled.div`
   display: flex;
   height: 100vh;
-  flex-direction: ${(props => props.left ? 'row-reverse' : 'row')};
+  flex-direction: ${(props => props.side === 'right' ? 'row-reverse' : 'row')};
 `;
 
 const TextContainer = styled.div`
-  flex: 0 1 40%;
+  flex: 0 1 35%;
   display: flex;
   flex-direction: column;
   justify-self: center;
