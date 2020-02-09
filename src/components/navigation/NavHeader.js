@@ -12,7 +12,6 @@ const NavHeader = (props) => {
 
   return (
     <Container scroll={scrolling}>
-      {console.log('position', scrolling)}
       <MenuBtnContainer onClick={props.toggleSideNav}>
         <MenuButton/>
         <p>Menu</p>
