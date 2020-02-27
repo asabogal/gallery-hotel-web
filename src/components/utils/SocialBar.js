@@ -8,7 +8,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 const SocialBar = (props) => {
   return (
     <Container>
-      <a href="https://www.instagram.com/galleryhotelny/">
+      <a href="https://www.instagram.com/galleryhotelny/" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon 
           icon={faInstagram} 
           size={props.size}
@@ -16,7 +16,7 @@ const SocialBar = (props) => {
         />
       </a>
 
-      <a href="https://www.facebook.com/galleryhotelny/">
+      <a href="https://www.facebook.com/galleryhotelny/" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon 
           icon={faFacebookF} 
           size={props.size}
