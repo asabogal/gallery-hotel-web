@@ -36,7 +36,7 @@ const MenuBtn = styled.div`
   div {
     width: 35px;
     height: 2px;
-    background-color: #333;
+    background-color: #002b5c;
     margin: 6px 0;
     transition: 0.4s;
   } 
