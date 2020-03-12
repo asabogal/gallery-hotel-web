@@ -16,25 +16,25 @@ const SideNav = (props) => {
         <Link to='/'>HOME</Link>
       </section>
       <section onClick={props.click}>
-        <Link to='/'>RESERVE</Link>
-      </section>
-      <section onClick={props.click}>
-        <Link to='/amenities'>AMENITIES</Link>
+        <Link to='/location'>LOCATION</Link>
       </section>
       <section onClick={props.click}>
         <Link to='/rooms'>ROOMS</Link>
       </section>
       <section onClick={props.click}>
-        <Link to='/events_blocks'>EVENTS & ROOM BLOCKS</Link>
+        <Link to='/amenities'>AMENITIES</Link>
       </section>
       <section onClick={props.click}>
         <Link to='/food_drinks'>FOOD & DRINKS</Link>
       </section>
       <section onClick={props.click}>
-        <Link to='/location'>LOCATION</Link>
+        <Link to='/events_blocks'>EVENTS & ROOM BLOCKS</Link>
       </section>
       <section onClick={props.click}>
         <Link to='/contact'>CONTACT US</Link>
+      </section>
+      <section onClick={props.click}>
+        <Link to='/'>RESERVE</Link>
       </section>
       
       
