@@ -18,7 +18,7 @@ class ContactUs extends Component {
   }
 
   handleChange = (e) => {
-    const {name, value} = e.taget;
+    const {name, value} = e.target;
     this.setState({
       [name]: value
     });
@@ -29,6 +29,11 @@ class ContactUs extends Component {
       <Container>
         <Heading>
           <h1>CONTACT US</h1>
+          <p>
+            For immidiate assistance or to reach us directly, please call us at <a style={{color: '#002b5c'}}
+            href="tel: +1-631-477-4000"> 631-477-4000 </a>.<br></br>
+            For all other inquiries and requests, please fill in the form below.
+          </p>
         </Heading>
         <div>
           <Form onSubmit={this.handleSubmit}>
