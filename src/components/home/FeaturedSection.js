@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {Picture, Thumbnail} from '../utils/Pictures';
 
 const FeaturedSection = ({title, subTitle, description, features, link, image, side}) => {
   return (
@@ -38,7 +39,7 @@ const FeaturedSection = ({title, subTitle, description, features, link, image, s
         </ul>
       </TextContainer>
       <ImageContainer>
-        <img src={image} alt='featured'/>
+        <Picture picture={image} alt='featured'/>
       </ImageContainer>
     </Wrapper>
   );
@@ -50,16 +51,14 @@ const Wrapper = styled.div`
   display: flex;
   height: 100vh;
   flex-direction: ${(props => props.side === 'right' ? 'row-reverse' : 'row')};
-  /* margin-top: 50px; */
 `;
 
 const TextContainer = styled.div`
-  flex: 0 1 40%;
+  flex: 0 1 35%;
   display: flex;
   flex-direction: column;
-  justify-items: center;
-  /* height: auto; */
-  margin: 20px 30px;
+  justify-content: center;
+  padding: 0 40px;
   h1 {
     font-size: 44px;
     line-height: 58px;
@@ -79,18 +78,9 @@ const TextContainer = styled.div`
 `;
 
 const ImageContainer = styled.div`
-  position: relative;
   flex: 1 1;
-  /* width: 60%; */
-  
-  height: auto;
-  img {
-    position: absolute;
-    width: 100%;
-    height: auto;
-    min-height: 80vh;
-    max-height: 650px;
-  }
+  height: 100%;  
+  max-height: 90vh;
 `;
 
 const Links = styled.li`
