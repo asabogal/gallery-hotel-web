@@ -10,22 +10,4 @@ const Map = () => {
 
 const MapGoogle = withScriptjs(withGoogleMap(Map));
 
-// const GoolgeMap = () => {
-//   return (
-//     <Container>
-//       <GoogleMap 
-//         googleMapUrl={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places`}
-//         loadingElement={<div style={{ height: `100%` }} />}
-//         containerElement={<div style={{ height: `400px` }} />}
-//         mapElement={<div style={{ height: `100%` }} />}
-//         />
-//     </Container>
-//   )
-// };
-
 export default MapGoogle;
-
-const Container = styled.div`
-  height: 100vh;
-  width: 100vw;
-`;
