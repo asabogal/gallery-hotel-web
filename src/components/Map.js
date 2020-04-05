@@ -4,10 +4,13 @@ import {GoogleMap} from 'react-google-maps';
 
 const Map = () => {
   return (
-    <div>
-      <GoogleMaap/>
-    </div>
+    <Container>
+      <GoogleMap/>
+    </Container>
   );
 };
 
 export default Map;
+
+const Container = styled.div`
+`;
