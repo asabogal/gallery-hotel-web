@@ -4,8 +4,8 @@ export const spots = [
     description: 'A speakeasy bar specializing in Classic Cocktails and more modern variations. They serve top notch spirits, wines and beers in a low-key, casual setting.',
     url: 'http://www.brixandrye.com',
     coordinates: {
-      lat: 41.103945,
-      lng: 72.359591
+      lat: 41.104046,
+      lng: -72.359637
     }
   },
   {
@@ -13,8 +13,8 @@ export const spots = [
     description: 'Little, relaxed eatery specializing in brick-oven pizza, salads & other Italian bites.',
     url: 'https://rollingindoughpizza.com',
     coordinates: {
-      lat: 41.104085,
-      lng: 72.359534
+      lat: 41.104086,
+      lng: -72.359334
     }
   },
   {
@@ -22,8 +22,8 @@ export const spots = [
     description: 'Warm, minimal outpost offering Japanese sushi, sashimi & ramen noodles plus sake flights.',
     url: 'http://stirlingsake.com',
     coordinates: {
-      lat: 41.105058,
-      lgn: 72.360291
+      lat: 41.105016,
+      lgn: -72.360369
     }
   },
   {
@@ -32,7 +32,7 @@ export const spots = [
     url: 'https://northforkyogashala.com',
     coordinates: {
       lat: 41.104425,
-      lgn: 72.359532
+      lgn: -72.359532
     }
   },
   {
@@ -41,7 +41,7 @@ export const spots = [
     url: 'https://www.timesvintage.com',
     coordinates: {
       lat: 41.104245,
-      lng: 72.360197
+      lng: -72.360197
     }
   },
   {
@@ -50,7 +50,7 @@ export const spots = [
     url: 'https://www.thefriskyoyster.com',
     coordinates: {
       lat: 41.102189,
-      lng: 72.359732
+      lng: -72.359732
     }
   },
   {
@@ -59,7 +59,7 @@ export const spots = [
     url: 'https://www.lucharitos.com',
     coordinates: {
       lat: 41.102058,
-      lng: 72.359034
+      lng: -72.359034
     }
   },
   {
@@ -68,7 +68,7 @@ export const spots = [
     url: 'https://littlecreekoysters.com',
     coordinates: {
       lat: 41.101864,
-      lng: 72.359793
+      lng: -72.359793
     }
   },
   {
@@ -77,7 +77,52 @@ export const spots = [
     url: 'http://bruceandsongreenport.com', 
     coordinates: {
       lat: 41.102718,
-      lng: 72.358966
+      lng: -72.358966
+    }
+  },
+  {
+    name: 'Long Island North Fork Wine Tours',
+    description: "Long Island's Premiere Wine Tour Company",
+    url: 'https://www.northforkwinetours.com',
+    coordinates: {
+      lat: 41.111064,
+      lgn: -72.358952
+    }
+  },
+  {
+    name: "Noah's",
+    description: 'New American small plates emphasizing local ingredients plus a raw bar in a modern storefront space.',
+    url: 'https://www.chefnoahs.com',
+    coordinates: {
+      lat: 41.102077,
+      lng: -72.361672
+    }
+  },
+  {
+    name: 'PORT Waterfont Bar & Grill',
+    description: "Low-key seaside outpost offering an array of fresh seafood & pub fare, wine & cocktails.",
+    url: 'https://www.portbarandgrill.com',
+    coordinates: {
+      lat: 41.100861,
+      lng: -72.362241
+    }
+  },
+  {
+    name: 'Beall & Bell',
+    description: 'Rare and unique finds in this antique store.',
+    url: 'http://www.beallandbell.com',
+    coordinates: {
+      lat: 41.104367,
+      lng: -72.359779
+    }
+  },
+  {
+    name: 'The North Fork Yoga Shala',
+    description: 'the North Fork’s premiere Yoga Studio located in the heart of Greenport, NY. We are a full-service yoga studio featuring a broad schedule of classes to suit all ages and activity levels.',
+    url: 'https://northforkyogashala.com',
+    coordinates: {
+      lat: 41.104334,
+      lng: -72.359658
     }
   }
 ]

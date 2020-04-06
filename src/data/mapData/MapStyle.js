@@ -106,7 +106,7 @@ export const mapStyle = [
       "elementType": "geometry.stroke",
       "stylers": [
           {
-              "visibility": "off"
+              "visibility": "on"
           }
       ]
   },
