@@ -27,15 +27,6 @@ export const spots = [
     }
   },
   {
-    name: 'The North Fork Yoga Shala',
-    description: 'A full-service yoga studio featuring a broad schedule of classes to suit all ages and activity levels.',
-    url: 'https://northforkyogashala.com',
-    coordinates: {
-      lat: 41.104425,
-      lgn: -72.359532
-    }
-  },
-  {
     name: 'The Times Vintage',
     description: "A spacious shop is filled with one-of-a-kind pieces that are gently used & genuinely loved. Each item is hand selected & carefully curated based on it's uniqueness, the story it tells, & the nostalgia it evokes.",
     url: 'https://www.timesvintage.com',
