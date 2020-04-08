@@ -11,7 +11,7 @@ const TopSection = () => {
         
       </SideBar>
       <SideBar side='right'>
-        <SocialBar size='lg'/>
+        <SocialBar size='lg' direction='column'/>
       </SideBar>
       <Video/>
     </Container>

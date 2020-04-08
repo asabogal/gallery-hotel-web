@@ -7,7 +7,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const SocialBar = (props) => {
   return (
-    <Container>
+    <Container direction={props.direction}>
       <a href="https://www.instagram.com/galleryhotelny/" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon 
           icon={faInstagram} 
@@ -39,7 +39,7 @@ export default SocialBar;
 
 const Container = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: ${(props => props.direction)};
   justify-content: center;
   align-items: center;
   a {
