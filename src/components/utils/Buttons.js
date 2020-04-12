@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 export const Button = styled.button`
-  background-color: ${(props => props.background || '#002b5c')};
+  background-color: ${(props => props.background || '#0c284f')};
   color: ${(props => props.color || 'white')};
   font-size: ${(props => props.font || '12px')};
   height: ${(props => props.height || '45px')};
@@ -12,7 +12,7 @@ export const Button = styled.button`
   border: none;
   cursor: pointer;
   &:hover {
-    background-color: ${(props => props.hover || '#17477e')};
+    background-color: ${(props => props.hover || '#274268')};
 }
 `;
 
