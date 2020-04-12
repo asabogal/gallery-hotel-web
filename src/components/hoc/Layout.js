@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import NavHeader from '../navigation/NavHeader';
 import SideNav from '../navigation/SideNav';
 import Backdrop from './Backdrop';
+import Footer from '../navigation/Footer';
 
 const Layout = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,6 +26,7 @@ const Layout = (props) => {
       <SideNav open={isOpen} click={closeSideNav}/>
       {backdrop}
       {props.children}
+      <Footer/>
     </div>
   );
 };
