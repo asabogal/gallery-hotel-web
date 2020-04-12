@@ -32,7 +32,7 @@ const EmailForm = () => {
           />
           <FormInput 
             placeholder="Email Address"
-            type="text"
+            type="email"
             name="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -48,7 +48,7 @@ export default EmailForm;
 
 const Container = styled.div`
   display: grid;
-  width: 250px;
+  width: 200px;
 `;
 
 const FormContainer = styled.div`
@@ -64,7 +64,7 @@ const FormInput = styled.input`
   border: 1px solid #002b5c;
   font-size: 14px;
   color: #002b5c;
-  background-color: white;
+  background-color: #f6f7ff;
   margin-bottom: 5px;
-  padding-left: 10px;
+  padding: 5px;
 `;
