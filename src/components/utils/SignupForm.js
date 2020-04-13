@@ -18,7 +18,7 @@ const EmailForm = () => {
           Keep in Touch
         </h4>
         <h5>
-          Sign up for all the latests news, deals and updates
+          Sign up and our latest news, deals, and updates
         </h5>
       </div>
       <FormContainer>
