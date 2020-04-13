@@ -70,7 +70,7 @@ const Container = styled.div`
   padding: 40px 10vw;
   h4 {
     font-size: 14px;
-    font-weight: 800;
+    font-weight: 500;
     margin-block-start: 3px;
     margin-block-end: 3px;
     margin-inline-start: 0px;
@@ -78,7 +78,7 @@ const Container = styled.div`
   }
   h5 {
     font-size: 14px;
-    font-weight: 200;
+    font-weight: 300;
     margin-block-start: 3px;
     margin-block-end: 3px;
     margin-inline-start: 0px;
@@ -109,6 +109,8 @@ const LinksWrapper = styled.div`
   li {
     list-style: none;
     padding-top: 12px;
+    font-weight: 300;
+    font-size: 14px;
   }
   a {
     text-decoration: none;
