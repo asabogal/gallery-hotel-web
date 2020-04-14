@@ -71,6 +71,7 @@ const Container = styled.div`
   h4 {
     font-size: 14px;
     font-weight: 500;
+    letter-spacing: 0;
     margin-block-start: 3px;
     margin-block-end: 3px;
     margin-inline-start: 0px;
