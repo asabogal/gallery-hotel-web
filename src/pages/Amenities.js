@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Amenity from '../components/utils/Amenity';
 // styled
+import {PageContainer} from '../components/utils/StyledLayouts';
 import {HeadingContainer} from '../components/utils/StyledLayouts';
 //data
 import {amenities} from '../data/amenities/Amenity';
@@ -32,14 +33,9 @@ const Amenities = () => {
 
 export default Amenities;
 
-const PageContainer = styled.div`
-  display: grid;
-  justify-content: center;
-`;
-
 const AmenitiesContainer = styled.div`
   display: grid;
   gap: 5vh;
   background-color: white;
-  margin: 10vh 20vw;
+  margin: 0 20vw;
 `;
