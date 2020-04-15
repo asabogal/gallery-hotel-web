@@ -1,10 +1,10 @@
 // images
-import kingDeck from '../../images/rooms/room_pictures/king_deck/KING WITH DECK.png';
-import queenDeck from '../../images/rooms/room_pictures/queen_deck/QUEEN WITH DECK.png';
-import standard from '../../images/rooms/room_pictures/standard_room/STANDARD ROOM 3.png';
-import kingLoft from '../../images/rooms/room_pictures/king_loft/KING LOFT RM5.png';
-import gardenSuite from '../../images/rooms/room_pictures/garden_suite/GARDEN SUITE BEDS.png';
-import privateSuite from '../../images/rooms/room_pictures/private_suite/PRIVATE SUITE BED.png';
+import kingDeck from '../../images/rooms/room_pictures/king_deck/kingdeck.png';
+import queenDeck from '../../images/rooms/room_pictures/queen_deck/queendeck.png';
+import standard from '../../images/rooms/room_pictures/standard_room/standard3.png';
+import kingLoft from '../../images/rooms/room_pictures/king_loft/kingloft5.png';
+import gardenSuite from '../../images/rooms/room_pictures/garden_suite/gardensuite.png';
+import privateSuite from '../../images/rooms/room_pictures/private_suite/privatesuite.png';
 // icons
 import twoPersons from '../../images/rooms/icons/cards/two_persons.svg';
 import threePersons from '../../images/rooms/icons/cards/three_persons.svg';
