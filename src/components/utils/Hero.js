@@ -1,10 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Hero = ({image, height, content}) => {
+const Hero = ({image, height, contentTop, contentBottom}) => {
   return (
     <Container image={image} height={height}>
-      {content}
+      <div>
+        {contentTop}
+      </div>
+     
+      <div>
+        {contentBottom}
+      </div>
+      
     </Container>
   );
 };
@@ -12,8 +19,11 @@ const Hero = ({image, height, content}) => {
 export default Hero;
 
 const Container = styled.div`
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  align-items: flex-end;
   width: 100vw;
-  height: ${(props => props.height || '90vh')};
+  height: ${(props => props.height || '85vh')};
   background: url(${props => props.image}) no-repeat;
   background-position: center center;
   background-size: cover;
