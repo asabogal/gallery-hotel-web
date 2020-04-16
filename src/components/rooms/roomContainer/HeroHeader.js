@@ -10,11 +10,11 @@ const HeroHeader = ({name, avgRate, image}) => {
       <BottomContent>
         <TextContainer>
           <h4>{name}</h4>
-          <h5>${avgRate} / avg rate</h5>
+          <h5><span>${avgRate}</span> / avg rate</h5>
         </TextContainer>
         <ButtonContainer>
           <a href='https://clients.innroad.com/gallery/property.aspx'>
-            <Button background='#46af9e' hover='#7dd3c5'>BOOK ROOM</Button>
+            <Button background='#46af9e' hover='#7dd3c5'>BOOK NOW</Button>
           </a>
         </ButtonContainer>
       </BottomContent>
@@ -58,15 +58,19 @@ const TextContainer = styled.div`
   justify-content: space-evenly;
   h4 {
     font-weight: 600;
-    font-size: 40px;
+    font-size: 45px;
     margin: 0;
   }
   h5 {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 18px;
     padding-left: 20px;
     margin: 0;
     padding-top: 15px;
+  }
+  span {
+    font-weight: 600;
+    font-size: 25px;
   }
   @media (max-width: 1025px) {
     flex-direction: column;
@@ -89,6 +93,9 @@ const TextContainer = styled.div`
       font-weight: 400;
       color: aaaaaa;
       padding: 0px;
+    }
+    span {
+      font-size: 18px;
     }
   }
 
