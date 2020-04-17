@@ -1,8 +1,10 @@
 import React, {useState} from 'react';
+import styled from 'styled-components';
 import NavHeader from '../navigation/NavHeader';
 import SideNav from '../navigation/SideNav';
 import Backdrop from './Backdrop';
 import Footer from '../navigation/Footer';
+import MobileFooter from '../navigation/MobileFooter';
 
 const Layout = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,14 +23,27 @@ const Layout = (props) => {
   };
 
   return (
-    <div>
+    <LayoutContainer>
       <NavHeader toggleSideNav={toggleSideNav}/>
       <SideNav open={isOpen} click={closeSideNav}/>
       {backdrop}
       {props.children}
       <Footer/>
-    </div>
+      <MobileFooter/>
+    </LayoutContainer>
   );
 };
 
 export default Layout;
+
+const LayoutContainer = styled.div`
+  height: 100vh;
+  section {
+    display: none;
+  }
+  @media (max-width: 500px) {
+    section {
+      display: block;
+    }
+  }
+`;
