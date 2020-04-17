@@ -9,7 +9,7 @@ import {amenities} from '../data/amenities/Amenity';
 
 const Amenities = () => {
 
-  const renderAmenities = (data) => {
+  const renderAmenities = () => {
     return amenities.map(amenity => {
       return (
         <Amenity key={amenity.heading} heading={amenity.heading} description={amenity.description} link={amenity.link}/>
@@ -24,7 +24,7 @@ const Amenities = () => {
         <h3>More than a good night's sleep. Everything that makes staying at The Gallery Hotel an experience to remember</h3>
       </HeadingContainer>
       <AmenitiesContainer>
-        {renderAmenities(amenities)}
+        {renderAmenities()}
       </AmenitiesContainer>
     </PageContainer>
     
