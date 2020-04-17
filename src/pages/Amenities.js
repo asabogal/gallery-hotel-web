@@ -12,7 +12,7 @@ const Amenities = () => {
   const renderAmenities = (data) => {
     return amenities.map(amenity => {
       return (
-        <Amenity key={amenity.heading} heading={amenity.heading} description={amenity.description}/>
+        <Amenity key={amenity.heading} heading={amenity.heading} description={amenity.description} link={amenity.link}/>
       )
     })
   }
