@@ -6,7 +6,7 @@ const RoomFeatures = ({features}) => {
   const renderFeatures = () => {
     return Object.entries(features).map(([feature, icon]) => {
       return (
-        <ul>
+        <ul key={feature}>
           <Feature key={feature}><img src={icon} alt='icon'/> {feature}</Feature>
         </ul>
       )
@@ -14,7 +14,6 @@ const RoomFeatures = ({features}) => {
   };
 
   return (
-
     <Container>
       <Title>
        <h4>ROOM FEATURES</h4>
@@ -35,14 +34,11 @@ const Container = styled.div`
 const Title = styled.div`
   border-bottom: 1px solid lightgray;
   h4 {
-    color: #61d1be; 
-    font-weight: 300;
-    font-size: 16px;
+    font-weight: 500;
+    font-size: 14px;
     letter-spacing: 0;
   }
 `;
-
-
 
 const FeaturesContainer = styled.div`
   display: grid;
