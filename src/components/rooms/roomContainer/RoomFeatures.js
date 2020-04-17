@@ -14,22 +14,18 @@ const RoomFeatures = ({features}) => {
   };
 
   return (
-    <Container>
+    <div>
       <Title>
        <h4>ROOM FEATURES</h4>
       </Title>
       <FeaturesContainer>
         {renderFeatures()}
       </FeaturesContainer>
-    </Container>
+    </div>
   );
 };
 
 export default RoomFeatures;
-
-const Container = styled.div`
-  margin: 0px 40px;
-`;
 
 const Title = styled.div`
   border-bottom: 1px solid lightgray;
@@ -43,6 +39,8 @@ const Title = styled.div`
 const FeaturesContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
+  @media (max-width: 992px) {
+  } 
 
   ul {
     padding: 0px 5px;

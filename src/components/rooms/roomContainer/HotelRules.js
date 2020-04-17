@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const HotelRules = () => {
   return (
-    <Container>
+    <div>
       <Title>
         <h4>HOTEL RULES</h4>
       </Title>
@@ -17,19 +17,11 @@ const HotelRules = () => {
           <li>No Pets</li>
         </ul>
       </TextContainer>
-    </Container>
+    </div>
   );
 };
 
 export default HotelRules;
-
-const Container = styled.div`
-  display: grid;
-  grid-template-rows: auto auto;
-  color: white;
-  background-color: rgba(97, 209, 190, 0.7);
-  padding: 2vh 2vw;
-`;
 
 const Title = styled.div`
   text-align: left;
