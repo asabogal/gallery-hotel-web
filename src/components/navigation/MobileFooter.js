@@ -1,11 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import {Button} from '../utils/Buttons'
+import {Link} from 'react-router-dom';
 
 const MobileFooter = () => {
   return (
     <Container>
-      <Button width='100vw' background='#61d1be'>Book Now</Button>
+      <Link to='/reserve'>
+        <Button width='100vw' background='#61d1be'>BOOK NOW</Button>
+      </Link>
     </Container>
   );
 };
