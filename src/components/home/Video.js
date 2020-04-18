@@ -15,13 +15,10 @@ const Video = () => {
 export default Video;
 
 const VideoContainer = styled.div`
-  min-width: 100%; 
-  min-height: 80%;
-  width: auto; 
-  z-index: -100;
-  background-size: cover;
-  overflow: hidden;
-  video {
-    height: auto;
-  }
+ video {
+  width: 100vw;
+  min-height: 32vh;
+  max-height: 90vh;
+  object-fit: cover;
+}
 `;
