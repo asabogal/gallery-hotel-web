@@ -53,7 +53,7 @@ const Container = styled.div`
   align-items: center;
   a {
     color: inherit;
-    padding: 10px 0px;
+    padding: 10px 10px;
     cursor: pointer;
   }
 `;
