@@ -15,7 +15,7 @@ const MobileFooter = () => {
 
 export default MobileFooter;
 
-const Container = styled.section`
+const Container = styled.nav`
   position: fixed;
   bottom: 0%;
   width: 100vw;
