@@ -12,15 +12,15 @@ const EmailForm = () => {
   }
 
   return (
-    <Container>
-      <div>
+    <div>
+      <FormHeading>
         <h4>
           Keep in Touch
         </h4>
         <h5>
           Sign up and our latest news, deals, and updates
         </h5>
-      </div>
+      </FormHeading>
       <FormContainer>
         <form onSubmit={handleSubmit}>
           <FormInput 
@@ -37,21 +37,23 @@ const EmailForm = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
-          <Button type='submit' width='120px' height='35px'>SIGN UP</Button>
+          <div>
+            <Button type='submit' width='120px' height='35px'>SIGN UP</Button>
+          </div>
         </form>
       </FormContainer>
-    </Container>
+    </div>
   );
 };
 
 export default EmailForm;
 
-const Container = styled.div`
-  display: grid;
-  width: 200px;
+const FormHeading = styled.div`
 `;
 
 const FormContainer = styled.div`
+  display: flex;
+  flex-direction: column;
   letter-spacing: 0px;
   button {
     margin-top: 5px;
