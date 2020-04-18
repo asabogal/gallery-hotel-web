@@ -38,11 +38,11 @@ export default Layout;
 
 const LayoutContainer = styled.div`
   height: 100vh;
-  section {
+  nav {
     display: none;
   }
   @media (max-width: 500px) {
-    section {
+    nav-down {
       display: block;
     }
   }
