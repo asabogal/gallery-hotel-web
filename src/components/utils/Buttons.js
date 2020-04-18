@@ -34,7 +34,7 @@ const BtnContainer = styled.div`
 const MenuBtn = styled.div`
   cursor: pointer;
   div {
-    width: 35px;
+    width: 50px;
     height: 2px;
     background-color: #002b5c;
     margin: 6px 0;
@@ -44,6 +44,21 @@ const MenuBtn = styled.div`
     div {
       height: 3px;
       margin: 7px 0;
+    }
+  }
+  @media (max-width: 500px) {
+    div {
+      width: 35px;
+      height: 1px;
+      background-color: #002b5c;
+      margin: 6px 0;
+      transition: 0.4s;
+    } 
+    &:hover {
+      div {
+        height: 2px;
+        margin: 7px 0;
+      }
     }
   }
 `;
