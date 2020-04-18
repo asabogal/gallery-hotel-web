@@ -23,7 +23,7 @@ const Policies = () => {
         </ul>
         <h4>Damages and Civility</h4>
         <ul>
-          <li>Damages incured during by you or your guests, will be assesed and charged to tour credit card.</li> 
+          <li>Damages incured by you or your guests, will be assesed and charged to your credit card.</li> 
           <li>Acts of violence or unruly behavior will be reported to local authorities and may be subject to expulsion from the Hotel premises.</li> 
           <li>Lobby and Garden hours are from 8am to 11pm.</li> 
         </ul>
