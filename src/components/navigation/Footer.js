@@ -3,7 +3,9 @@ import styled from 'styled-components';
 import SignupForm from '../utils/SignupForm';
 import SocialBar from '../utils/SocialBar';
 import {Link} from 'react-router-dom';
-
+// media library
+import Media from 'react-media';
+// logo
 import logo from '../../images/gh_logo.svg';
 
 const Footer = () => {
@@ -15,7 +17,7 @@ const Footer = () => {
         </LogoContainer>
         <div>
           <h4>info@galleryhotelny.com</h4>
-          <h4>+1 631-477-4000</h4>
+          <h4>631-477-4000</h4>
         </div>
         <div>
           <h5>439 Main Street</h5>
@@ -25,9 +27,6 @@ const Footer = () => {
       <LinksWrapper>
         <ul>
           <li>
-            <Link to='/about'>About</Link>
-          </li>
-          <li>
             <Link to='/location'>Location</Link>
           </li>
           <li>
@@ -36,24 +35,43 @@ const Footer = () => {
           <li>
             <Link to='/amenities'>Amenities</Link>
           </li>
-        </ul>
-        <ul>
           <li>
             <Link to='/eat'>Eat and Drink</Link>
           </li>
+        </ul>
+        <ul>
           <li>
-            <Link to='/events'>Events and Room Blocks</Link>
+            <Link to='/events'>Events & Blocks</Link>
           </li>
           <li>
             <Link to='/contact'>Contact Us</Link>
+          </li>
+          <li>
+            <Link to='/polices'>Policies</Link>
           </li>
           <li>
             <Link to='/reserve'>Reserve a Room</Link>
           </li>
         </ul>
       </LinksWrapper>
-      <SignupForm/>
-      <SocialBar size='lg' direction='column'/>
+      <FormWrapper>
+        <SignupForm/>
+      </FormWrapper>
+      <Media queries={{
+          small: "(max-width: 599px)",
+          medium: "(min-width: 600px) and (max-width: 1199px)",
+          large: "(min-width: 1200px)"
+        }}>
+          {matches => (
+            <>
+              {matches.small && <SocialBar size='lg' direction='row'/>}
+              {matches.medium && <SocialBar size='lg' direction='row'/>}
+              {matches.large && <SocialBar size='lg' direction='column'/>}
+            </>
+          )}
+        </Media>
+        
+  
     </Container>
   );
 };
@@ -61,13 +79,14 @@ const Footer = () => {
 export default Footer;
 
 const Container = styled.div`
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 1fr;
   align-items: center;
   background-color: rgba(222, 226, 238, 0.6);
   border: 1px solid #4b698b;
   height: auto;
-  padding: 40px 10vw;
+  justify-items: center;
+  padding: 20px 40px;
   h4 {
     font-size: 14px;
     font-weight: 500;
@@ -85,6 +104,26 @@ const Container = styled.div`
     margin-inline-start: 0px;
     margin-inline-end: 0px;
   }
+  @media (max-width: 1023px) {
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: auto auto;
+    row-gap: 5vh;
+  }
+  @media (max-width: 599px) {
+    grid-template-columns: 1fr;
+    row-gap: 5vh;
+    text-align: center;
+    img {
+      display: none;
+    }
+  }
+`;
+
+const InfoWrapper = styled.div`
+  justify-self: center;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  row-gap: 12px;
 `;
 
 const LogoContainer = styled.div`
@@ -98,15 +137,13 @@ const LogoContainer = styled.div`
   }
 `;
 
-const InfoWrapper = styled.div`
-  display: grid;
-  grid-template-rows: repeat(3, auto);
-  row-gap: 12px;
-`;
-
 const LinksWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
+  ul {
+    margin: 0;
+    padding: 0;
+  }
   li {
     list-style: none;
     padding-top: 12px;
@@ -121,3 +158,8 @@ const LinksWrapper = styled.div`
     }
   }
 `;
+
+const FormWrapper = styled.div`
+  width: 60%;
+`;
+
