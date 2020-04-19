@@ -2,22 +2,22 @@ import React from 'react';
 import styled from 'styled-components';
 import RoomCard from '../components/rooms/RoomCard';
 // data
-import {cardData} from '../data/rooms/cardData';
+import {roomData} from '../data/rooms/roomData';
 // styled
 import {PageContainer, HeadingContainer} from '../components/utils/StyledLayouts';
 
 const Rooms = () => {
 
-  const renderCards = (cardData) => {
-    return cardData.map(card => {
+  const renderCards = () => {
+    return roomData.map(room => {
       return (
         <RoomCard 
-          key={card.name} 
-          name={card.name}
-          image={card.image}
-          description={card.description} 
-          features={card.features}
-          link={card.link}
+          key={room.name} 
+          name={room.name}
+          image={room.images.cardImage}
+          description={room.description} 
+          features={room.cardFeatures}
+          link={room.link}
         />
       )
     })
@@ -29,7 +29,7 @@ const Rooms = () => {
         <h3>The hotel features 8 rooms, and 2 luxury suites. All come with Sumptuous Bedding, Indulgent Minibars, 100% Egyptian Cotton Bathrobes, and Complimentary Wireless Internet. Rooms with Sundeck available.</h3>
       </HeadingContainer>
       <Container>
-        {renderCards(cardData)}
+        {renderCards()}
       </Container>
     </PageContainer>
   );
