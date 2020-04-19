@@ -14,7 +14,7 @@ const HeroHeader = ({name, avgRate, image}) => {
         </TextContainer>
         <ButtonContainer>
           <a href='https://clients.innroad.com/gallery/property.aspx'>
-            <Button background='#46af9e' hover='#7dd3c5'>BOOK NOW</Button>
+            <Button background='#93e9d9' color='#0c284f' hover='#7dd3c5'>BOOK NOW</Button>
           </a>
         </ButtonContainer>
       </BottomContent>
@@ -102,4 +102,7 @@ const TextContainer = styled.div`
 `;
 
 const ButtonContainer = styled.div`
+  button {
+    font-weight: 400;
+  }
 `;

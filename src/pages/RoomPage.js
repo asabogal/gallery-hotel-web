@@ -99,8 +99,8 @@ const RoomInfoContainer = styled.div`
 const RulesContainer = styled.div`
   display: grid;
   grid-template-rows: auto auto;
-  color: white;
-  background-color: rgba(97, 209, 190, 0.7);
+  color: #0c284f;
+  background-color: rgba(147, 233, 217, 0.7);
   padding: 2vh 2vw;
 `;
 

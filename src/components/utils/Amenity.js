@@ -19,7 +19,7 @@ export default Amenity;
 
 const Container = styled.div`
   display: grid;
-  border: 2px solid #61d1be;
+  border: 2px solid #93e9d9;
   padding: 10px 40px;
   text-align: left;
   a {

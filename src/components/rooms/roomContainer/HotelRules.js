@@ -30,10 +30,6 @@ const Title = styled.div`
     font-size: 16px;
     letter-spacing: 0;
   }
-  p {
-    font-size: 14px;
-    margin: 0;
-  }
 `;
 
 const TextContainer = styled.div`
@@ -41,11 +37,15 @@ const TextContainer = styled.div`
   column-gap: 5vw;
   grid-template-columns: 2fr 1fr;
   font-size: 14px;
+  p {
+    font-size: 14px;
+    font-weight: 200;
+  }
+  li {
+    font-weight: 200;
+  }
   @media (max-width: 1100px) {
     grid-template-columns: 1fr 1fr;
-    li {
-      padding: 0;
-    }
   } 
   @media (min-width: 600px) and (max-width: 992px) {
     grid-template-columns: 2fr 1fr ;
