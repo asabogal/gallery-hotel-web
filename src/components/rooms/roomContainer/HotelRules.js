@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {Link} from 'react-router-dom';
 
 const HotelRules = () => {
   return (
@@ -40,4 +41,17 @@ const TextContainer = styled.div`
   column-gap: 5vw;
   grid-template-columns: 2fr 1fr;
   font-size: 14px;
+  @media (max-width: 1100px) {
+    grid-template-columns: 1fr 1fr;
+    li {
+      padding: 0;
+    }
+  } 
+  @media (min-width: 600px) and (max-width: 992px) {
+    grid-template-columns: 2fr 1fr ;
+  }
+
+  @media (max-width: 599px) {
+    grid-template-columns: 1fr;
+  } 
 `;

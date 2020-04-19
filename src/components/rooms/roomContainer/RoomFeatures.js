@@ -40,8 +40,12 @@ const FeaturesContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   @media (max-width: 992px) {
+    justify-content: center;
   } 
-
+  @media (max-width: 599px) {
+    justify-content: center;
+    grid-template-columns: 1fr;
+  } 
   ul {
     padding: 0px 5px;
     margin-bottom: 10px;
@@ -50,7 +54,6 @@ const FeaturesContainer = styled.div`
 
 const Feature = styled.li`
   display: flex;
-  align-items: center;
   font-size: 14px;
   font-weight: 200;
   list-style: none;
