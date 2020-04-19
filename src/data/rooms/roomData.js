@@ -23,6 +23,15 @@ import privateSuite3 from '../../images/rooms/room_pictures/private_suite/privat
 import privateSuite4 from '../../images/rooms/room_pictures/private_suite/privatesuite4.png';
 import privateSuiteDeck from '../../images/rooms/room_pictures/private_suite/privatesuite_deck.png';   
 import privateSuiteTub from '../../images/rooms/room_pictures/private_suite/privatesuite_tub.png';   
+  // decks
+import deck1 from '../../images/rooms/room_pictures/deck/deck1.png';
+import deck2 from '../../images/rooms/room_pictures/deck/deck2.png';
+import deck3 from '../../images/rooms/room_pictures/deck/deck3.png';
+// other
+import minibarImage from '../../images/rooms/room_pictures/other/minibar.png';
+import breakfast from '../../images/rooms/room_pictures/other/breakfast.png';
+import dresser from '../../images/rooms/room_pictures/other/dresser.png';
+
 // large icons
 import twoPersonsLarge from '../../images/rooms/icons/cards/two_persons.svg';
 import threePersonsLarge from '../../images/rooms/icons/cards/three_persons.svg';
@@ -85,7 +94,7 @@ export const roomData = [
     images: {
       cardImage: standard3,
       heroImage: standard3,
-      other: [standard8, standard4, standard7, standard3]
+      other: [standard8, standard4, standard7, standard3, dresser, minibarImage]
     },
     link: '/rooms/standard',
     path: 'standard'
@@ -120,7 +129,7 @@ export const roomData = [
     images: {
       cardImage: kingLoft5,
       heroImage: kingLoft5,
-      other: [kingLoft6, kingLoft5]
+      other: [kingLoft6, kingLoft5, dresser, minibarImage]
     },
     link: '/rooms/kingloft',
     path: 'kingloft'
@@ -157,6 +166,7 @@ export const roomData = [
     images: {
       cardImage: queenDeck,
       heroImage: queenDeck,
+      other: [deck1, deck2, deck3]
     },
     link: '/rooms/queendeck',
     path: 'queendeck'
@@ -192,7 +202,8 @@ export const roomData = [
     },
     images: {
       cardImage: kingDeck,
-      heroImage: kingDeck
+      heroImage: kingDeck,
+      other: [deck1, deck2, deck3]
     },
     link: '/rooms/kingdeck',
     path: 'kingdeck'
@@ -274,7 +285,7 @@ export const roomData = [
       heroImage: privateSuite,
       other: [privateSuite2, privateSuite3, privateSuite4, privateSuiteTub, privateSuiteDeck]
     },
-    ink: '/rooms/privatesuite',
+    link: '/rooms/privatesuite',
     path: 'privatesuite'
   }
 ]
