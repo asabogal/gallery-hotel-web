@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
+import {Picture} from './Pictures';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
@@ -7,6 +8,7 @@ import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 const ImageSlider = ({images}) => {
 
   const [x, setX] = useState(0);
+
   useEffect(() => {
     window.scrollTo(0, 0);
     setX(0);
@@ -16,8 +18,22 @@ const ImageSlider = ({images}) => {
     return images.map((image, index) => {
       return (
         <Slide key={index} style={{transform: `translateX(${x}%)`}}>
-          <img src={image}></img>
-        </Slide>
+          <Picture picture={image}/>
+          <LeftButton onClick={moveLeft}>
+          <FontAwesomeIcon
+            icon={faChevronLeft}
+            size='2x'
+            color='white'
+          />
+        </LeftButton>
+        <RightButton onClick={moveRight}>
+        <FontAwesomeIcon
+          icon={faChevronRight}
+          size='2x'
+          color='white'
+        />
+        </RightButton>
+      </Slide>
       )
     })
   };
@@ -33,47 +49,34 @@ const ImageSlider = ({images}) => {
   return (
     <Slider>
       {renderImages()}
-      <LeftButton onClick={moveLeft}>
-        <FontAwesomeIcon
-          icon={faChevronLeft}
-          size='2x'
-          color='white'
-        />
-      </LeftButton>
-      <RightButton onClick={moveRight}>
-      <FontAwesomeIcon
-        icon={faChevronRight}
-        size='2x'
-        color='white'
-      />
-      </RightButton>
-    </Slider>
+    </Slider>    
   )
 };
 
 export default ImageSlider;
 
 const Slider = styled.div`
-  border: 2px solid #61d1be;
-  width: 100%;
-  height: 90vh;
+  width: 80%;
+  height: auto;
+  max-height: 85vh;
   display: flex;
   align-items: center;
   margin: 40px auto;
-  position: relative;
   overflow: hidden;
 `;
 
 const Slide = styled.div`
-  border: 1px solid blue;
   min-width: 100%;
-  height: 100%;
+  width: 100%;
+  min-height: 100%;
   transition: 0.5s;
   overflow: hidden;
+  position: relative;
   img {
-    width: 100%;
-    height: 100%;
-    /* object-fit: cover; */
+    max-width: 100%;
+    height: auto;
+    min-height: 100%;
+    object-fit: contain;
   }
 `;
 
@@ -82,7 +85,7 @@ const Button = styled.button`
   top: 50%;
   transform: translateY(-50%);
   background: none;
-  width: 5%;
+  width: 5vw;
   height: 100%;
   border: none;
   cursor: pointer;
