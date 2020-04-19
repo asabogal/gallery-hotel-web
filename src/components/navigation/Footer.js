@@ -16,8 +16,8 @@ const Footer = () => {
           <img src={logo} alt='hotel-logo'></img>
         </LogoContainer>
         <div>
-          <h4>info@galleryhotelny.com</h4>
-          <h4>631-477-4000</h4>
+          <a href="mailto:info@galleryhotelny.com"><h4>info@galleryhotelny.com</h4></a>
+          <a href="tel: +1-631-477-4000"><h4>631-477-4000</h4></a>
         </div>
         <div>
           <h5>439 Main Street</h5>
@@ -104,6 +104,14 @@ const Container = styled.div`
     margin-inline-start: 0px;
     margin-inline-end: 0px;
   }
+  a {
+    text-decoration: none;
+    color: inherit;
+    :hover {
+      text-decoration: underline;
+    }
+  }
+
   @media (max-width: 1023px) {
     grid-template-columns: 2fr 2fr;
     grid-template-rows: auto auto;
@@ -149,13 +157,6 @@ const LinksWrapper = styled.div`
     padding-top: 12px;
     font-weight: 300;
     font-size: 14px;
-  }
-  a {
-    text-decoration: none;
-    color: inherit;
-    :hover {
-      text-decoration: underline;
-    }
   }
 `;
 
