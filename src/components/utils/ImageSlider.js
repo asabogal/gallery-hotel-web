@@ -1,14 +1,16 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import { Picture } from './Pictures';
-
 
 const ImageSlider = ({images}) => {
 
   const [x, setX] = useState(0);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    setX(0);
+  }, [images])
 
   const renderImages = () => {
     return images.map((image, index) => {
@@ -54,7 +56,7 @@ export default ImageSlider;
 const Slider = styled.div`
   border: 2px solid #61d1be;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   margin: 40px auto;
@@ -71,7 +73,7 @@ const Slide = styled.div`
   img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
   }
 `;
 
