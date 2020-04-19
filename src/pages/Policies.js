@@ -42,7 +42,7 @@ const Policies = () => {
 export default Policies;
 
 const Container = styled.div`
-  border: 2px solid #61d1be;
+  border: 2px solid #93e9d9;
   width: 80vw;
   margin: 40px auto;
   background-color: white;
