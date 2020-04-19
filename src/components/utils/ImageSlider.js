@@ -1,5 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+
 
 const ImageSlider = ({images}) => {
 
@@ -15,11 +19,23 @@ const ImageSlider = ({images}) => {
 
   return (
     <Slider>
-      {
-        renderImages()
-      }
+      {renderImages()}
+      <LeftButton>
+        <FontAwesomeIcon
+          icon={faChevronLeft}
+          size='2x'
+          color='white'
+        />
+      </LeftButton>
+      <RightButton>
+      <FontAwesomeIcon
+        icon={faChevronRight}
+        size='2x'
+        color='white'
+      />
+      </RightButton>
     </Slider>
-  );
+  )
 };
 
 export default ImageSlider;
@@ -31,6 +47,7 @@ const Slider = styled.div`
   display: flex;
   align-items: center;
   margin: 40px auto;
+  position: relative;
 `;
 
 const Slide = styled.div`
@@ -42,4 +59,26 @@ const Slide = styled.div`
     height: 100%;
     object-fit: cover;
   }
+`;
+
+const Button = styled.button`
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  width: 5%;
+  height: 100%;
+  border: none;
+  cursor: pointer;
+  :hover {
+    background-color: rgba(0,0,0,0.4);
+  }
+`;
+
+const LeftButton = styled(Button)`
+  left: 0;
+`;
+
+const RightButton = styled(Button)`
+  right: 0;
 `;
