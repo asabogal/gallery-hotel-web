@@ -18,6 +18,7 @@ const Rooms = () => {
           description={room.description} 
           features={room.cardFeatures}
           link={room.link}
+          explore={true}
         />
       )
     })

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 import {Picture} from '../utils/Pictures';
 
-const RoomCard = ({name, image, description, features, link}) => {
+const RoomCard = ({name, image, description, features, link, explore}) => {
 
   const renderIcons = (features) => {
     return Object.entries(features).map(([feature, icon]) => {
@@ -24,7 +24,9 @@ const RoomCard = ({name, image, description, features, link}) => {
           {renderIcons(features)}
         </IconsContainer>
         <p>{description}</p>
-        <Link to={link}>EXPLORE</Link>
+        {
+          explore && <Link to={link}>EXPLORE</Link>
+        }
       </InfoContainer>
     </Container>
   );
