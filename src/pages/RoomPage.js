@@ -1,12 +1,36 @@
 import React from 'react';
+import styled from 'styled-components';
 import HeroHeader from '../components/rooms/roomContainer/HeroHeader';
+import RoomInfo from '../components/rooms/roomContainer/RoomInfo';
+import RoomFeatures from '../components/rooms/roomContainer/RoomFeatures';
+import HotelRules from '../components/rooms/roomContainer/HotelRules';
+import ImageSlider from '../components/utils/ImageSlider';
+import RoomCard from '../components/rooms/RoomCard';
 // data
-import {roomData} from '../data/rooms/roomPageData';
+import {roomData} from '../data/rooms/roomData';
+// styled
+import {PageContainer} from '../components/utils/StyledLayouts';
 
 const RoomPage = (props) => {
 
   const path = props.match.params.name;
   const room = roomData.find(room => room.path === path);
+  const roomCards = roomData.filter(card => card.name !== room.name);
+
+  const renderMoreRooms = () => {
+    return roomCards.map(card => {
+      return (
+      <RoomCard 
+        key={card.name} 
+        name={card.name}
+        image={card.images.cardImage}
+        description={card.description} 
+        features={card.cardFeatures}
+        link={card.link}
+      />        
+      )
+    })
+  };
 
   return (
     <div>
@@ -15,9 +39,104 @@ const RoomPage = (props) => {
         name={room.name}
         avgRate={room.avgRate}
       />
+      <PageContainer>
+        <Content>
+          <InfoContainer>
+            <RoomInfoContainer>
+              <RoomInfo 
+                roomType={room.roomType} 
+                sleeps={room.sleeps} 
+                maxSleeps={room.maxSleeps}
+                description={room.description}
+              />
+            </RoomInfoContainer>
+            <RulesContainer>
+             <HotelRules/>
+            </RulesContainer>
+            
+          </InfoContainer>
+          <FeaturesContainer>
+            <RoomFeatures features={room.features}/>
+          </FeaturesContainer>
+        </Content>
+      </PageContainer>
+      <ImageSlider images={room.images.other}/>
+
+      <CardsContainer>
+        <h3>EXPLORE MORE ROOMS</h3>
+        <RoomCards>
+          {renderMoreRooms()}
+        </RoomCards>
+      </CardsContainer>
     </div>
   );
 };
 
 export default RoomPage;
+
+const Content = styled.div`
+  display: grid;
+  row-gap: 5vw;
+  grid-template-columns: 55% 45%;
+  @media (max-width: 1100px) {
+    grid-template-columns: 1fr 1fr;
+  } 
+  @media (max-width: 992px) {
+    grid-template-columns: 1fr;
+  } 
+`;
+
+const InfoContainer = styled.div`
+`;
+
+const RoomInfoContainer = styled.div`
+    border-bottom: 1px solid lightgray; 
+  p {
+    font-size: 14px;
+  }
+`;
+
+const RulesContainer = styled.div`
+  display: grid;
+  grid-template-rows: auto auto;
+  color: white;
+  background-color: rgba(97, 209, 190, 0.7);
+  padding: 2vh 2vw;
+`;
+
+const FeaturesContainer = styled.div`
+  margin: 0px 40px;
+  position: sticky;
+  top: 40px;
+  @media (max-width: 992px) {
+    justify-content: center;
+    width: 50vw;
+    margin: 0 auto;
+  } 
+`;
+
+const CardsContainer = styled.div`
+  background-color: #0c284f;
+  padding-bottom: 20px;
+  h3 {
+    text-align: center;
+    padding: 40px;
+    color: white;
+  }
+`;
+
+const RoomCards = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 2fr));
+  grid-template-rows: auto auto;
+  grid-gap: 30px;
+  /* margin-top: 50px; */
+  padding: 10px 30px;
+  h4, p {
+    color: white;
+  }
+  a {
+    color: transparent;
+  }
+`;
 
