@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {Thumbnail} from '../utils/Pictures';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 // images
@@ -12,25 +13,17 @@ const InstagramSection = () => {
   return (
     <Container>
       <Heading>
-        <h1>Follow Us on Instagram</h1>
+        <h2>Follow Us on Instagram</h2>
         <a href='https://www.instagram.com/galleryhotelny/' target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faInstagram} size='2x'/>
           <p>@galleryhotelny</p>
         </a>
       </Heading>
       <Gallery>
-        <Thumbnails>
-          <img src={chairs}/> 
-        </Thumbnails>
-        <Thumbnails>
-          <img src= {garden}/> 
-        </Thumbnails>
-        <Thumbnails>
-         <img src={mess}/> 
-        </Thumbnails>
-        <Thumbnails>
-          <img src={reception}/> 
-        </Thumbnails>
+        <Thumbnail image={chairs} alt='chairs-image'/>
+        <Thumbnail image={garden} alr='garden-image'/>
+        <Thumbnail image={mess} alt='mess-image'/>
+        <Thumbnail image={reception} alt='reception-image'/>
       </Gallery>
     </Container>
   );
@@ -42,7 +35,6 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   margin: 10px 0px;
-
 `;
 
 const Heading = styled.div`
@@ -50,6 +42,7 @@ const Heading = styled.div`
   justify-content: space-between;
   align-content: center;
   align-items: center;
+  margin-bottom: 15px;
   border-bottom: 1px solid #002b5c;
     a {
       display: flex;
@@ -63,20 +56,17 @@ const Heading = styled.div`
       padding-left: 10px;
       font-size: 14px;
     }
+    @media (max-width: 599px) {
+    flex-direction: column;
+    text-align: center;
+    h2 {
+      font-size: 2rem;
+    }
+  } 
 `;
 
 const Gallery = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 1rem;
-  row-gap: 2rem;
-  padding-top: 10px;
-`;
-
-const Thumbnails = styled.div`
-  height: 100%;
-  img {
-    height: auto;
-    width: 100%;
-  }
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
 `;
