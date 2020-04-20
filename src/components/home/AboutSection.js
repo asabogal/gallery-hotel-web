@@ -5,7 +5,6 @@ import {Thumbnail, Picture} from '../utils/Pictures';
 // images
 import hotel from '../../images/home/about/hotel.png';
 import livingroom from '../../images/home/about/livingroom.png';
-// import lounge from '../../images/home/about/lounge.png';
 import room from '../../images/home/about/room.png';
 
 const AboutSection = () => {
