@@ -15,10 +15,12 @@ export const Thumbnail = (props) => {
       <Link to={props.link}>
         <ThumbnailContainer>
           <img src={props.image} alt={props.alt}/>
-        <ThumbnailInfo>
-          <h4>{props.heading}</h4>
-          <p>{props.info}</p>
-        </ThumbnailInfo>
+          {props.heading &&
+           <ThumbnailInfo>
+            <h4>{props.heading}</h4>
+            <p>{props.info}</p>
+          </ThumbnailInfo>
+          }
       </ThumbnailContainer>
       </Link>
       )
@@ -26,10 +28,12 @@ export const Thumbnail = (props) => {
     return (
       <ThumbnailContainer>
         <img src={props.image} alt={props.alt}/>
-        <ThumbnailInfo>
-          <h4>{props.heading}</h4>
-          <p>{props.info}</p>
-        </ThumbnailInfo>
+        {props.heading &&
+          <ThumbnailInfo>
+            <h4>{props.heading}</h4>
+            <p>{props.info}</p>
+          </ThumbnailInfo>
+        }
       </ThumbnailContainer>
     ) 
   }
