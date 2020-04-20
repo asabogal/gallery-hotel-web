@@ -7,17 +7,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-image: url('./images/body-background.jpg');
   background-position: center center;
-  background-color: (0,0,0,0.2);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-video {
-  width: 100vw;
-  object-fit: cover;
 }
 
 h1 {
@@ -45,6 +39,30 @@ h3 {
   font-size: 1.5em;
 }
 
+h4 {
+  letter-spacing: -1.5px;
+  margin-block-start: 3px;
+  margin-block-end: 3px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 25px;
+}
+
 p {
   font-weight: 300;
+}
+
+@media (max-width: 599px) {
+  h1 {
+    font-size: 2.5em;
+  } 
+  h2 {
+    font-size: 1.8em;
+  }
+  h3 {
+    font-size: 1.2em;
+  }
+  h4 {
+    font-size: 20px;
+  }
 }
