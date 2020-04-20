@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {Thumbnail} from '../utils/Pictures';
+import {Thumbnail, Picture} from '../utils/Pictures';
 
 // images
 import hotel from '../../images/home/about/hotel.png';
@@ -31,6 +31,9 @@ const AboutSection = () => {
           link='/rooms'
           />
         </TopSection>
+        <HotelImageContainer>
+            <Picture picture={hotel} alt='hotel-image'/>
+          </HotelImageContainer>
     </Container>
   );
 };
@@ -38,6 +41,7 @@ const AboutSection = () => {
 export default AboutSection;
 
 const Container = styled.div`
+  display: grid;
   grid-template-rows: auto auto;
   grid-gap: 2rem;
 `;
@@ -50,4 +54,10 @@ const TopSection = styled.div`
 `;
 
 const Info = styled.div`
+`;
+
+const HotelImageContainer = styled.div`
+  width: 50vw;
+  height: auto;
+  margin-left: 20vw;
 `;
