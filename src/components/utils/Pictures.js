@@ -13,11 +13,25 @@ export const Thumbnail = (props) => {
   if (props.link) {
     return (
       <Link to={props.link}>
-        <ThumbnailContainer picture={props.picture} width={props.width} height={props.height} opacity={props.opacity}/>
+        <ThumbnailContainer>
+          <img src={props.image} alt={props.alt}/>
+        <ThumbnailInfo>
+          <h4>{props.heading}</h4>
+          <p>{props.info}</p>
+        </ThumbnailInfo>
+      </ThumbnailContainer>
       </Link>
       )
   } else {
-    return <ThumbnailContainer picture={props.picture} width={props.width} height={props.height} opacity={props.opacity}/>
+    return (
+      <ThumbnailContainer>
+        <img src={props.image} alt={props.alt}/>
+        <ThumbnailInfo>
+          <h4>{props.heading}</h4>
+          <p>{props.info}</p>
+        </ThumbnailInfo>
+      </ThumbnailContainer>
+    ) 
   }
 }
 
@@ -29,10 +43,22 @@ const Image = styled.img`
 `;
 
 const ThumbnailContainer = styled.div`
-  background: url(${props => props.picture}) no-repeat;
-  background-size: cover !important;
-  background-position: center center;
-  width: ${props => props.width};
-  height: ${props => props.height};
-  opacity: ${props => props.opacity || '1'};
+  position: relative;
+  img {
+    width: 100%;
+    height: auto;
+  }
+`;
+
+const ThumbnailInfo = styled.div`
+  position: absolute;
+  width: 80%;
+  bottom: 1rem;
+  left: 1rem;
+  background-color: rgba(252, 252, 252, 0.9);
+  margin: 0 1rem;
+  padding: 0 1rem;
+  p {
+    margin: 0;
+  }
 `;
