@@ -13,7 +13,7 @@ export const Thumbnail = (props) => {
   if (props.link) {
     return (
       <Link to={props.link}>
-        <ThumbnailContainer>
+        <ThumbnailContainer contain={props.contain}>
           <img src={props.image} alt={props.alt}/>
           {props.heading &&
            <ThumbnailInfo>
@@ -26,7 +26,7 @@ export const Thumbnail = (props) => {
       )
   } else {
     return (
-      <ThumbnailContainer>
+      <ThumbnailContainer contain={props.contain}>
         <img src={props.image} alt={props.alt}/>
         {props.heading &&
           <ThumbnailInfo>
@@ -48,9 +48,12 @@ const Image = styled.img`
 
 const ThumbnailContainer = styled.div`
   position: relative;
+  width: 100%;
+  height: 100%;
   img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: ${props => props.contain || 'cover'}
   }
 `;
 
@@ -64,5 +67,9 @@ const ThumbnailInfo = styled.div`
   padding: 0 1rem;
   p {
     margin: 0;
+  }
+  h4, p {
+    text-decoration: none;
+    color: #0c284f;
   }
 `;
