@@ -14,7 +14,7 @@ const HeroHeader = ({name, avgRate, image}) => {
         </TextContainer>
         <ButtonContainer>
           <a href='https://clients.innroad.com/gallery/property.aspx'>
-            <Button background='#93e9d9' color='#0c284f' hover='#7dd3c5'>BOOK NOW</Button>
+            <Button light>BOOK NOW</Button>
           </a>
         </ButtonContainer>
       </BottomContent>
