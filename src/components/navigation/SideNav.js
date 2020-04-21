@@ -25,7 +25,7 @@ const SideNav = (props) => {
         <Link to='/amenities'>AMENITIES</Link>
       </section>
       <section onClick={props.click}>
-        <Link to='/food_drinks'>FOOD & DRINKS</Link>
+        <Link to='/eatdrink'>EAT & DRINK</Link>
       </section>
       <section onClick={props.click}>
         <Link to='/events_blocks'>EVENTS & BLOCKS</Link>
