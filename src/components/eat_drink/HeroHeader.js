@@ -9,8 +9,8 @@ const HeroHeader = () => {
   const content = () => {
     return (
       <ContentContainer>
-        <h2>KonTiki</h2>
-        <h4>Eclectic Cousine</h4>
+        <h2>Kon Tiki</h2>
+        <h4>Our In-House Restaurant & Bar</h4>
     </ContentContainer>
     )
 
@@ -21,7 +21,6 @@ const HeroHeader = () => {
       <Hero 
         image={bar}
         contentTop={content()}
-        height='65vh'
       />
     </div>
   );
@@ -33,11 +32,10 @@ const ContentContainer = styled.div`
   color: white;
   text-align: center;
   h2 {
-    font-size: 2.5rem;
+    font-size: 5rem;
   }
   h2, h4 {
     font-weight: 200;
-    letter-spacing: 0px;
+    margin: 0;
   }
-  
 `;
