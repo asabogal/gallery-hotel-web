@@ -15,10 +15,13 @@ const ImageSlider = ({images}) => {
   }, [images])
 
   const renderImages = () => {
-    return images.map((image, index) => {
+    return Object.entries(images).map(([key, image]) => {
       return (
-        <Slide key={index} style={{transform: `translateX(${x}%)`}}>
+        <Slide key={key} style={{transform: `translateX(${x}%)`}}>
           <Picture picture={image}/>
+        {key.length > 1 && <SlideInfo>
+            <h4>{key}</h4>
+          </SlideInfo>}
           <LeftButton onClick={moveLeft}>
           <FontAwesomeIcon
             icon={faChevronLeft}
@@ -39,11 +42,11 @@ const ImageSlider = ({images}) => {
   };
 
   const moveLeft = () => {
-    x === 0 ? setX(-100 * (images.length - 1)) : setX(x + 100);
+    x === 0 ? setX(-100 * (Object.entries(images).length - 1)) : setX(x + 100);
   };
 
   const moveRight = () => {
-    x === -100 * (images.length - 1) ? setX(0) : setX(x - 100);
+    x === -100 * (Object.entries(images).length - 1) ? setX(0) : setX(x - 100);
   };
 
   return (
@@ -77,6 +80,23 @@ const Slide = styled.div`
     height: auto;
     min-height: 100%;
     object-fit: contain;
+  }
+`;
+
+const SlideInfo = styled.div`
+  position: absolute;
+  width: 80%;
+  bottom: 10%;
+  left: 40%;
+  background-color: rgba(252, 252, 252, 0.9);
+  margin: 0 1rem;
+  padding: 0 1rem;
+  p {
+    margin: 0;
+  }
+  h4, p {
+    text-decoration: none;
+    color: #0c284f;
   }
 `;
 
