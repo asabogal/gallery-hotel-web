@@ -37,12 +37,12 @@ const Layout = (props) => {
 export default Layout;
 
 const LayoutContainer = styled.div`
-  height: 100vh;
+  position: relative;
   nav {
     display: none;
   }
   @media (max-width: 500px) {
-    nav-down {
+    nav {
       display: block;
     }
   }
