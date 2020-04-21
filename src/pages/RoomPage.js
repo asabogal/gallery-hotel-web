@@ -27,6 +27,7 @@ const RoomPage = (props) => {
         description={card.description} 
         features={card.cardFeatures}
         link={card.link}
+        small
       />        
       )
     })

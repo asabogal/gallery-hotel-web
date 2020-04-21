@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 import {Picture} from '../utils/Pictures';
 
-const RoomCard = ({name, image, description, features, link, explore}) => {
+const RoomCard = ({name, image, description, features, link, explore, small}) => {
 
   const renderIcons = (features) => {
     return Object.entries(features).map(([feature, icon]) => {
@@ -12,7 +12,7 @@ const RoomCard = ({name, image, description, features, link, explore}) => {
   }
 
   return (
-    <Container>
+    <Container small={small}>
       <ImageContainer>
         <Link to={link}>
           <Picture picture={image} alt='room-picture'/>
@@ -36,7 +36,10 @@ export default RoomCard;
 
 const Container = styled.div`
   display: grid;
-  grid-template-rows: auto auto;
+  grid-template-rows: ${props => props.small ? '40% 60%' : '50% 50%'};
+  @media (max-width: 620px) {
+    grid-template-rows: auto auto;
+  }
 `;
 
 const ImageContainer = styled.div`
