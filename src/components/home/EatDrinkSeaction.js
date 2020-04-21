@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import {Thumbnail} from '../utils/Pictures';
 import {Button} from '../utils/Buttons';
+import {Link} from 'react-router-dom';
 // images
 import signatureDrink from '../../images/home/restaurant/signaturedrink.png';
 import friedRice from '../../images/home/restaurant/friedrice.png';
@@ -25,13 +26,17 @@ const EatDrinkSection = () => {
               alt='drink-image'
             />
         </InfoImages>
-         <Button>Explore</Button>
+        <AnchorDiv>
+          <Link to='/eatdrink'>Learn More<span> &rarr;</span></Link>
+        </AnchorDiv>
       </InfoContainer>
       <ImageContainer>
         <Thumbnail 
           image={oysters} 
           alt='oysters-image'
-          contain='contain'
+          link='/eatdrink'
+          heading='Explore our Restaurant'
+          info='Taste Reimagined'
           />
       </ImageContainer>
     </Container>
@@ -52,7 +57,29 @@ const InfoContainer = styled.div`
   flex-direction: column;
   padding-top: 50px;
   button {
+    
     margin-top: 40px;
+  }
+`;
+
+const AnchorDiv = styled.div`
+  cursor: pointer;
+  text-align: right;
+  a {
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+    color: #0c284f;
+    padding-right: 10px;
+  }
+  span {
+    font-size: 20px;
+    transition: 0.5s;
+  }
+  &:hover {
+    span {
+      padding-left: 8px;
+    }
   }
 `;
 
