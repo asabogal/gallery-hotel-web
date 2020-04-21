@@ -149,7 +149,7 @@ const LinksWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   ul {
-    margin: 0;
+    margin: 3vh;
     padding: 0;
   }
   li {
