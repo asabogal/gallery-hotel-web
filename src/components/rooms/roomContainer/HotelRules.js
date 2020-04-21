@@ -16,6 +16,7 @@ const HotelRules = () => {
           <li>Adults Only</li>
           <li>No Smoking</li>
           <li>No Pets</li>
+          <li><Link to='/polices'>Hotel Policies</Link></li>
         </ul>
       </TextContainer>
     </div>
@@ -43,6 +44,13 @@ const TextContainer = styled.div`
   }
   li {
     font-weight: 200;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+    :hover {
+      text-decoration: underline;
+    }
   }
   @media (max-width: 1100px) {
     grid-template-columns: 1fr 1fr;
