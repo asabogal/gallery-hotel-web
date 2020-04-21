@@ -60,17 +60,20 @@ const TextContainer = styled.div`
     font-weight: 600;
     font-size: 45px;
     margin: 0;
+    -webkit-text-stroke: 0.02rem #0c284f;
   }
   h5 {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 22px;
     padding-left: 20px;
     margin: 0;
-    padding-top: 15px;
+    padding-top: 18px;
+    -webkit-text-stroke: 0.01rem #0c284f;
   }
   span {
     font-weight: 600;
-    font-size: 25px;
+    font-size: 28px;
+    -webkit-text-stroke: 0.01rem #0c284f;
   }
   @media (max-width: 1025px) {
     flex-direction: column;
@@ -89,7 +92,7 @@ const TextContainer = styled.div`
       font-size: 25px;
     }
     h5 {
-      font-size: 15px;
+      font-size: 16px;
       font-weight: 400;
       color: aaaaaa;
       padding: 0px;
