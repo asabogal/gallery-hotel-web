@@ -68,7 +68,5 @@ const IconsContainer = styled.div`
   img {
     padding-right: 15px;
   }
-  /* justify-content: space-between;
-  justify-items: flex-start; */
 `;
 
