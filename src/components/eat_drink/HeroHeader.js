@@ -10,7 +10,8 @@ const HeroHeader = () => {
     return (
       <ContentContainer>
         <h2>Kon Tiki</h2>
-        <h4>Our In-House Restaurant & Bar</h4>
+        <h4>at</h4>
+        <h4>THE GALLERY HOTEL</h4>
     </ContentContainer>
     )
 
@@ -33,6 +34,7 @@ const ContentContainer = styled.div`
   text-align: center;
   h2 {
     font-size: 5rem;
+    line-height: 90%;
   }
   h2, h4 {
     font-weight: 200;
