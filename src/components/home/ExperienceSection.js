@@ -12,14 +12,14 @@ const ExperienceSection = () => {
         <Thumbnail 
           image={lounge} 
           alt='lounge-image'
-          heading='Art Gallery'
-          info='More than a hotel... lorem ipsum dolor sit amet'
+          heading='Lounge'
+          info='Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
           link='/amenities/gallery'
           />
       </ImageContainer>
       <InfoContainer>
         <TextContainer>
-          <h2>Experience</h2>
+          <h2>Experience Style and Comfort</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </TextContainer>
         <ImageContainer>
