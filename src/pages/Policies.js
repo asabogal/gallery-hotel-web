@@ -18,7 +18,7 @@ const Policies = () => {
         <ul>
           <li>Cancellations made within 14 days of your arrival date will forefit your inital deposit.</li> 
           <li>Cancellations made within 24 hours or 'No Shows' will be charged the entire cost of the reservation.</li> 
-          <li>Reservations are not guaranteed without a major credit charge card at the time of booking. </li>  
+          <li>Reservations are not guaranteed without a major credit card charge at the time of booking. </li>  
           <li>Early Departure does not guarantee a refund or adjustment to your hotel charges.</li>
         </ul>
         <h4>Damages and Civility</h4>
@@ -32,7 +32,6 @@ const Policies = () => {
           <li>Adults Only Hotel. Must be 21 or over to book and stay at the Hotel.</li> 
           <li>No pets or animals allowed on the premises. We abide by the U.S. A.D.A. guidelines and procedures.</li> 
           <li>Smoking is not permited indoors. A $250 fee will be charged to your reservation cost.</li> 
-          <li>BE COOL AND ENJOY YOUR STAY!!</li> 
         </ul>
       </div>
     </Container>
