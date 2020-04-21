@@ -34,7 +34,7 @@ const Container = styled.div`
   position: sticky;
   top: 0;
   display: grid;
-  opacity: ${props => props.scroll <=0 ? '1' : '0'};
+  opacity: ${props => props.scroll <= 1 ? '1' : '0'};
   transition: 0.6s;
   background-color: white;
   grid-template-columns: 1fr 1fr 1fr;
