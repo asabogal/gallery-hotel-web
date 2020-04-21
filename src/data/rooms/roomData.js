@@ -95,10 +95,10 @@ export const roomData = [
       cardImage: standard3,
       heroImage: standard3,
       other: {
-        "Standard Room 4#": standard4, 
-        "Standard Room 7#": standard7, 
-        "Standard Room 8#": standard8,
-        "Standard Room 3#": standard3, 
+        "Standard Room #4": standard4, 
+        "Standard Room #7": standard7, 
+        "Standard Room #8": standard8,
+        "Standard Room #3": standard3, 
         "x": dresser,   
         "z": minibarImage, 
       }
@@ -142,9 +142,9 @@ export const roomData = [
         "x": dresser,   
         "z": minibarImage,
       },
+    },
     link: '/rooms/kingloft',
     path: 'kingloft'
-    }
   },
 
   {
