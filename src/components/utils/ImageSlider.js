@@ -19,9 +19,11 @@ const ImageSlider = ({images}) => {
       return (
         <Slide key={key} style={{transform: `translateX(${x}%)`}}>
           <Picture picture={image}/>
-        {key.length > 1 && <SlideInfo>
+          {key.length > 1 && 
+          <SlideInfo>
             <h4>{key}</h4>
-          </SlideInfo>}
+          </SlideInfo>
+          }
           <LeftButton onClick={moveLeft}>
           <FontAwesomeIcon
             icon={faChevronLeft}
