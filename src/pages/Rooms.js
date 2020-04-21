@@ -40,7 +40,7 @@ export default Rooms;
 
 const Container = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-template-rows: auto auto;
   grid-gap: 5vw;
   background-color: white;
