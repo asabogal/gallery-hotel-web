@@ -5,7 +5,7 @@ const RoomInfo = ({roomType, sleeps, maxSleeps, description}) => {
   return (
     <div>
       <Titles>
-        <h4>{roomType}</h4><h4>&bull;</h4><h4>SLEEPS {sleeps}</h4>        
+        <h4>{roomType}</h4><h4>&bull;</h4><h4>SLEEPS {sleeps} {maxSleeps && <span>(Max {maxSleeps})</span>} </h4>        
       </Titles>
       <Description>
         <p>{description}</p>
@@ -24,6 +24,9 @@ const Titles = styled.div`
     font-size: 14px;
     letter-spacing: 0;
     padding-right: 1vw;
+  }
+  span {
+    font-size: 10px;
   }
 `;
 
