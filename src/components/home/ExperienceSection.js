@@ -19,7 +19,7 @@ const ExperienceSection = () => {
       </ImageContainer>
       <InfoContainer>
         <TextContainer>
-          <h2>Experience Style and Comfort</h2>
+          <h2>Style and Comfort</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </TextContainer>
         <ImageContainer>
