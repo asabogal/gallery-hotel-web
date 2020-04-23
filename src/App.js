@@ -6,7 +6,11 @@ import Location from './pages/Location';
 import Rooms from './pages/Rooms';
 import RoomPage from './pages/RoomPage';
 import Amenities from './pages/Amenities';
+import AmenitiesGallery from './pages/AmenitiesGallery';
+import EatAndDrink from './pages/EatAndDrink';
+import Menu from './components/eat_drink/Menu';
 import ContactUs from './pages/ContactUs';
+import Policies from './pages/Policies';
 
 
 const App = () => {
@@ -17,9 +21,16 @@ const App = () => {
             <Route exact path='/' component={HomePage}/>
             <Route exact path='/location' component={Location}/>
             <Route exact path='/amenities' component={Amenities}/>
+            <Route exact path= '/amenities/:name' render={props => <AmenitiesGallery {...props}/>}/>
             <Route exact path='/rooms' component={Rooms}/>
-            <Route exact path='/contact' component={ContactUs}/>
             <Route exact path= '/rooms/:name' render={props => <RoomPage {...props}/>}/>
+            <Route exact path='/eatdrink' component={EatAndDrink}/>
+            <Route exact path= '/eatdrink/:name' render={props => <Menu {...props}/>}/>
+            <Route exact path='/contact' component={ContactUs}/>
+            <Route exact path='/policies' component={Policies}/>
+
+            {/* <Route exact path='/gallery' component={AmenityGallery}/> */}
+            <Route exact path='/gallery' component={AmenitiesGallery}/>
           </Switch>
       </Layout>
     </BrowserRouter>
