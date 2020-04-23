@@ -34,13 +34,13 @@ const Container = styled.div`
   position: sticky;
   top: 0;
   display: grid;
-  opacity: ${props => props.scroll <= 1 ? '1' : '0'};
+  opacity: ${props => props.scroll < 1 ? '1' : '0'};
   transition: 0.6s;
   background-color: white;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 80px;
   align-items: center;
-  z-index: 998;
+  z-index: 900;
   margin: 5px 0px;
   padding: 0 40px;
   @media (max-width: 599px) {
