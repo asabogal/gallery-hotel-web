@@ -77,7 +77,7 @@ export const CloseButton = (props) => {
 };
 
 const CloseBtn = styled(BtnContainer)`
-  margin: 20px 20px 10px 0px;
+  margin: 10px 15px 10px 0px;
   :hover {
     transform: scale(1.3)
     }
