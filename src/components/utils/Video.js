@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const Video = ({video}) => {
   return (
-    <VideoContainer video={video} height={height} width={width}>
+    <VideoContainer video={video}>
       <video autoPlay loop muted>
         <source src={video} type='video/mp4' />
       </video>
