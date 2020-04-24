@@ -15,6 +15,7 @@ export default Video;
 
 const VideoContainer = styled.div`
  video {
+  width: 100vw;
   min-height: 32vh;
   max-height: 90vh;
   object-fit: cover;
