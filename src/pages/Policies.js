@@ -12,6 +12,7 @@ const Policies = () => {
           <li>Check-in between 3pm and 10pm. Please call before 9pm if you require a later check-in time. Additional charges will be applied to check-ins past 12am.</li>
           <li>Check-out is anytime before 11am. </li>
           <h5> * Early Check-in and/or Late Check-out available on request. Additional charges may apply.</h5>
+          <li>We assume no responsibility for loss of money, jewels, or other valuables. The Hotel is not responsible for contents left in your room or vehicle on property. The property is not responsible for unclaimed items after more than 14 days from the date it was turned in.</li>
           <li>We reserve the right to admit, check-in, and/or serve individuals who appear intoxicated, and/or otherwise, not in an sane state of mind.</li>
         </ul>
         <h4>Cancellations</h4>
@@ -24,6 +25,8 @@ const Policies = () => {
         <h4>Damages and Civility</h4>
         <ul>
           <li>Damages incured by you or your guests, will be assesed and charged to your credit card.</li> 
+          <li>You will be held liable for any items missing from the room after your departure.</li>
+          <li>Lost and/or misplaced keys will result in a $75 replacement fee.</li>
           <li>Acts of violence or unruly behavior will be reported to local authorities and may be subject to expulsion from the Hotel premises.</li> 
           <li>Lobby and Garden hours are from 8am to 11pm.</li> 
         </ul>
@@ -32,6 +35,7 @@ const Policies = () => {
           <li>Adults Only Hotel. Must be 21 or over to book and stay at the Hotel.</li> 
           <li>No pets or animals allowed on the premises. We abide by the U.S. A.D.A. guidelines and procedures.</li> 
           <li>Smoking is not permited indoors. A $250 fee will be charged to your reservation cost.</li> 
+          <li>Free parking available on a first come, first served basis.</li> 
         </ul>
       </div>
     </Container>
