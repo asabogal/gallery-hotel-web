@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const HeadingContainer = styled.div`
-margin-top: 80px;
+margin-top: 40px;
 margin-bottom: 10vh;
 text-align: center;
 `;
