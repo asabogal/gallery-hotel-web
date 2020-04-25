@@ -9,34 +9,21 @@ import {PageContainer} from '../components/utils/StyledLayouts';
 const EventsBlocks = () => {
   return (
     <PageContainer>
-      <Container>
-        <InfoContainer>
-        <InfoBox/>
-          <ContactContainer>
+      <PageWrapper>
+        <div>
+          <InfoBox/>
           <ContactBox/>
-        </ContactContainer>
-        </InfoContainer>
+        </div>
         <ImageBox/>
-      </Container>
+      </PageWrapper>
     </PageContainer>
   );
 };
 
 export default EventsBlocks;
 
-const Container = styled.div`
+const PageWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
   gap: 40px;
-  max-width: 100%;
-  margin-top: 50px;
-`;
-
-const InfoContainer = styled.div`
- 
-`;
-
-const ContactContainer = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 `;
