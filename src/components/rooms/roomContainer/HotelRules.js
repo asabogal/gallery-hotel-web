@@ -16,7 +16,7 @@ const HotelRules = () => {
           <li>Adults Only</li>
           <li>No Smoking</li>
           <li>No Pets</li>
-          <li><Link to='/polices'>Hotel Policies</Link></li>
+          <li><Link to='/policies'>Hotel Policies</Link></li>
         </ul>
       </TextContainer>
     </div>
