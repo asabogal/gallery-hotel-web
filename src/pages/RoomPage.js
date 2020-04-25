@@ -101,7 +101,7 @@ const RulesContainer = styled.div`
   display: grid;
   grid-template-rows: auto auto;
   color: #0c284f;
-  background-color: rgba(147, 233, 217, 0.7);
+  background-color: rgba(147, 233, 217, 0.5);
   padding: 2vh 2vw;
 `;
 
