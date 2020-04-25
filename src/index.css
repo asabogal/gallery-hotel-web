@@ -1,6 +1,7 @@
 body {
   margin: 0;
-  background-color: rgb(245, 247, 250);
+  width: 100vw;
+  background-color: rgba(245, 247, 250, 0.9);
   color: #0c284f;
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -26,7 +27,7 @@ h1 {
 
 h2 {
   font-weight: 700;
-  font-size: 2.2em;
+  font-size: 2.5em;
   letter-spacing: -1.5px;
   margin-block-start: 3px;
   margin-block-end: 3px;
@@ -66,3 +67,15 @@ p {
     font-size: 20px;
   }
 }
+
+/* color {
+  background-color: rgba(3, 50, 110, 0.2);
+  color: #1c2f4d;
+  color: #61d1be;
+  color: #e0e0e0;
+  background-color: rgba(147, 233, 217, 0.7);
+  background-color: #93e9d9;
+  background-color: rgba(142, 208, 216, 0.7);
+  background-color: #8ed0d8;
+  background-color: rgba(252, 250, 250, 0.9);
+} */
