@@ -8,17 +8,15 @@ const ContactBox = () => {
     <Container>
       <TextContainer>
         <h4>CONTACT</h4>
-        <ul>
-          <li><p>Ale Bolt</p></li>
-          <li><p>General Manager</p></li>
-          <li><p>admin@galleryhotelny.com</p></li>
-          <li><p>631-477-4000</p></li>
-        </ul>
+        <p>Ale Bolt</p>
+        <p>General Manager</p>
+        <p>admin@galleryhotelny.com</p>
+        <p>631-477-4000</p>
       </TextContainer>
       <RequestContainer>
       <h3>REQUEST A PROPOSAL</h3>
       <Link to='/contact'>
-        <Button>Contact Us</Button>
+        <Button >Contact Us</Button>
       </Link>
     </RequestContainer>
     </Container>
@@ -29,36 +27,30 @@ export default ContactBox;
 
 const Container = styled.div`
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  column-gap: 50px;
-  justify-self: center;
-  align-self: center;
+  grid-template-columns: 1fr;
+  gap: 10px;
   border: 2px solid #93e9d9;
   padding: 10px 20px;
   text-align: left;
-  width: 100%;
   background-color: white;
-  margin: 0 auto;
+  margin-top: 40px;
   h4, h3 {
     font-size: 1.0rem;
-    margin: 0;
   }
-  li {
-    list-style: none;
-    color: inherit;
-    margin-left: -20px;
+  h3 {
+    font-weight: 500;
+  }
+  p {
     font-size: 14px;
+    margin: 5px;
   }
 `;
 
 const TextContainer = styled.div`
-  margin: 0 auto;
+  text-align: center;
 `;
 
 const RequestContainer = styled.div`
-  justify-self: center;
-  align-self: center;
-  margin: 0 auto;
   text-align: center;
   button {
     margin-top: 10px;
