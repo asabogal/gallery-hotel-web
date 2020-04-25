@@ -20,10 +20,26 @@ const InstagramSection = () => {
         </a>
       </Heading>
       <Gallery>
-        <Thumbnail image={chairs} alt='chairs-image'/>
-        <Thumbnail image={garden} alr='garden-image'/>
-        <Thumbnail image={mess} alt='mess-image'/>
-        <Thumbnail image={reception} alt='reception-image'/>
+        <ImageContainer>
+          <a href='https://www.instagram.com/galleryhotelny/' target="_blank" rel="noopener noreferrer">
+            <Thumbnail image={chairs} alt='chairs-image'/>
+          </a>
+        </ImageContainer>
+        <ImageContainer>
+          <a href='https://www.instagram.com/galleryhotelny/' target="_blank" rel="noopener noreferrer">
+            <Thumbnail image={garden} alr='garden-image'/>
+          </a>
+        </ImageContainer>
+        <ImageContainer>
+          <a href='https://www.instagram.com/galleryhotelny/' target="_blank" rel="noopener noreferrer">
+            <Thumbnail image={mess} alt='mess-image'/>
+          </a>
+        </ImageContainer>
+        <ImageContainer>
+          <a href='https://www.instagram.com/galleryhotelny/' target="_blank" rel="noopener noreferrer">
+            <Thumbnail image={reception} alt='reception-image'/>
+          </a> 
+        </ImageContainer>
       </Gallery>
     </Container>
   );
@@ -69,4 +85,8 @@ const Gallery = styled.div`
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
+`;
+
+const ImageContainer = styled.div`
+  align-self: center;
 `;

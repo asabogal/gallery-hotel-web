@@ -6,15 +6,15 @@ import {Link} from 'react-router-dom';
 // images
 import signatureDrink from '../../images/home/restaurant/signaturedrink.png';
 import friedRice from '../../images/home/restaurant/friedrice.png';
-import oysters from '../../images/home/restaurant/oysters.png';
+import bar from '../../images/home/restaurant/bar.png';
 
 const EatDrinkSection = () => {
   return (
     <Container>
       <InfoContainer>
         <TextContainer>
-          <h2>Tropical Vibes, Eclectic Flavors</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <h2>Eat & Drink</h2>
+          <p>Tropical Vibes, Eclectic Flavors,..........  consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </TextContainer>
         <InfoImages>
           <Thumbnail 
@@ -26,14 +26,11 @@ const EatDrinkSection = () => {
               alt='drink-image'
             />
         </InfoImages>
-        <AnchorDiv>
-          <Link to='/eatdrink'>Learn More<span> &rarr;</span></Link>
-        </AnchorDiv>
       </InfoContainer>
       <ImageContainer>
         <Thumbnail 
-          image={oysters} 
-          alt='oysters-image'
+          image={bar} 
+          alt='bar'
           link='/eatdrink'
           heading='Explore our Restaurant'
           info='Taste Reimagined'
@@ -50,36 +47,16 @@ const Container = styled.div`
   grid-template-columns: 1fr 1fr;
   /* grid-template-rows: auto; */
   grid-gap: 2rem;
+  height: 50%;
 `;
 
 const InfoContainer = styled.div`
   display: flex;
   flex-direction: column;
   padding-top: 50px;
+  height: 30%;
   button {
-    
     margin-top: 40px;
-  }
-`;
-
-const AnchorDiv = styled.div`
-  cursor: pointer;
-  text-align: right;
-  a {
-    font-size: 16px;
-    font-weight: 300;
-    text-decoration: none;
-    color: #0c284f;
-    padding-right: 10px;
-  }
-  span {
-    font-size: 20px;
-    transition: 0.5s;
-  }
-  &:hover {
-    span {
-      padding-left: 8px;
-    }
   }
 `;
 
@@ -94,6 +71,6 @@ const InfoImages = styled.div`
 `;
 
 const ImageContainer = styled.div`
-  max-height: 100vh;
+  /* max-height: 80%; */
   height: auto;
 `;

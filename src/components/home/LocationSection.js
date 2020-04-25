@@ -48,7 +48,7 @@ const MapContainer = styled.div`
 const InfoContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 10vh;
+  margin-top: 5vh;
 `;
 
 const TextContainer = styled.div`
