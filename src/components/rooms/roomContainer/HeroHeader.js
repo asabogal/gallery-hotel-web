@@ -13,7 +13,7 @@ const HeroHeader = ({name, avgRate, image}) => {
           <h5><span>${avgRate}</span> / avg rate</h5>
         </TextContainer>
         <ButtonContainer>
-          <a href='https://clients.innroad.com/gallery/property.aspx'>
+          <a href='https://galleryhotelny.client.innroad.com'>
             <Button light>BOOK NOW</Button>
           </a>
         </ButtonContainer>
