@@ -75,10 +75,11 @@ const Container = styled.div`
   margin: 0 auto;
   padding-bottom: 20px;
   margin-top: 10vh;
-  @media (max-width: 1000px) {
-  .contact-container {
-    width:  80vw;
-    }
+  @media (min-width: 600px) and (max-width: 999px) {
+    width: 70vw;
+  }
+  @media (max-width: 599px) {
+    width: 90vw;
   }
 `;
 
@@ -92,22 +93,27 @@ const Form = styled.form`
   grid-template-columns: 100%;
   grid-template-rows: repeat(4, auto);
   justify-content: center;
+  font-family: inherit;
 `;
 
 const Input = styled.input`
-  border: 1px #002b5c solid;
+  border: 2px solid #93e9d9;
   height: 20px;
   margin-bottom: 20px;
   padding: .75rem .75rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  color: inherit;
+  font-family: inherit;
 `;
 
 const TextArea = styled.textarea`
-  border: 1px #002b5c solid;
+  border: 2px solid #93e9d9;
   height: 9rem;
   min-height: 9rem;
   max-height: 12rem;
   margin-bottom: 20px;
   padding: .75rem .75rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  color: inherit;
+  font-family: inherit;
 `;
