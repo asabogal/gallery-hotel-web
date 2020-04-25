@@ -9,9 +9,13 @@ const NavHeader = (props) => {
 
   const scrollPosition = useScrollPosition();
   let scrolling = scrollPosition.difference;
+  let position = scrollPosition.currentPosition;
+
+  let showHeader;
+  if (position <= 0 && scrolling <= 1) showHeader = true;
 
   return (
-    <Container scroll={scrolling}>
+    <Container show={showHeader}>
       <MenuBtnContainer onClick={props.toggleSideNav}>
         <MenuButton/>
         <p>Menu</p>
@@ -34,7 +38,7 @@ const Container = styled.div`
   position: sticky;
   top: 0;
   display: grid;
-  opacity: ${props => props.scroll < 1 ? '1' : '0'};
+  opacity: ${props => props.show ? '1' : '0'};
   transition: 0.6s;
   background-color: white;
   grid-template-columns: 1fr 1fr 1fr;
@@ -46,7 +50,7 @@ const Container = styled.div`
   @media (max-width: 599px) {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 40px;
-    height: 40px;
+    height: 50px;
     align-items: flex-start;
     p {
       font-size: 12px;
