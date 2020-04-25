@@ -28,7 +28,7 @@ class ContactUs extends Component {
     return (
       <Container>
         <Heading>
-          <h1>CONTACT US</h1>
+          <h1>Contact Us</h1>
           <p>
             For immidiate assistance or to reach us directly, please call us at <a style={{color: '#002b5c'}}
             href="tel: +1-631-477-4000"> 631-477-4000 </a>.<br></br>
@@ -73,8 +73,8 @@ const Container = styled.div`
   display: grid;
   width: 50vw;
   margin: 0 auto;
-  padding-bottom: 20px;
-  margin-top: 10vh;
+  padding-bottom: 40px;
+  margin-top: 5vh;
   @media (min-width: 600px) and (max-width: 999px) {
     width: 70vw;
   }
