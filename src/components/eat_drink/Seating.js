@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import {Picture, Thumbnail} from '../utils/Pictures';
 // images
 import garden from '../../images/eat_drink/garden.jpeg';
-import corn from '../../images/eat_drink/corn.png';
+import oysters from '../../images/eat_drink/oysters.png';
 import dinningRoom from '../../images/eat_drink/dinningroom.png';
 
 
@@ -29,7 +29,11 @@ const Seating = () => {
           />
         </TopSection>
         <ImageContainer>
-            <Picture picture={corn} alt='corn-plate'/>
+        <Thumbnail 
+          image={oysters} 
+          alt='oysters'
+          contain='contain'
+          />
           </ImageContainer>
     </Container>
   );
@@ -39,7 +43,7 @@ export default Seating;
 
 const Container = styled.div`
   display: grid;
-  grid-template-rows: auto auto;
+  grid-template-rows: auto 90vh;
   grid-gap: 2rem;
 `;
 
@@ -54,7 +58,7 @@ const Info = styled.div`
 `;
 
 const ImageContainer = styled.div`
-  width: 50vw;
-  height: auto;
-  margin-left: 20vw;
+  width: 100%;
+  height: 100%;
+  /* margin-left: 20vw; */
 `;
