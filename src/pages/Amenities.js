@@ -37,5 +37,12 @@ const AmenitiesContainer = styled.div`
   display: grid;
   gap: 5vh;
   background-color: white;
-  margin: 0 20vw;
+  width: 60vw;
+  margin: 0 auto;
+  @media (min-width: 600px) and (max-width: 999px) {
+    width: 70vw;
+  }
+  @media (max-width: 599px) {
+    width: 90vw;
+  }
 `;
