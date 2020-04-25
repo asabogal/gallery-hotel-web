@@ -70,7 +70,7 @@ const Card = styled.div`
   a { 
     margin-top: 10px;
     text-decoration: none;
-    color: #61d1be;;
+    color: inherit;
     font-size: 14px;
     font-weight: 400;
     text-align: center;

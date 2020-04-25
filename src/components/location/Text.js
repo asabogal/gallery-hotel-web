@@ -10,7 +10,7 @@ const Text = () => {
       <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       <ArrivalCards />
       <h2>Local Spots</h2>
-      <p>Greenport is the North Fork's premier destination. Restaurants, shops and other area attractions are walking distance from the hotel. The east coast's best wineries and local farms are just a short drive away. Local transportation, designated driver service, and winery tours available.</p>
+      <p>Greenport is Long Island's North Fork premier destination. Restaurants, shops and other area attractions are walking distance from the hotel. The east coast's best wineries and local farms are just a short drive away. Local transportation, designated driver service, and winery tours available.</p>
       <h4>Recommended</h4>
       <SpotCards />
     </Container>

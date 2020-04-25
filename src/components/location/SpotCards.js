@@ -41,6 +41,7 @@ const Container = styled.div`
   display: flex;
   gap: 8px;
   justify-content: space-between;
+  background: white;
   @media (max-width: 675px) {
     flex-direction: column;
     text-align: center;
@@ -55,11 +56,12 @@ const Card = styled.div`
   font-weight: 600;
   width: 160px;
   min-height: 180px;
-  background-color: rgba(147, 233, 217, 0.6);
+  background-color: rgba(147, 233, 217, 0.4);
   h3 {
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 500;
     margin: 5px 0px;
+    text-transform: uppercase;
   }
   p {
     margin: 0;
