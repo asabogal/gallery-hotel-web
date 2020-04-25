@@ -18,7 +18,7 @@ const SideNav = (props) => {
       <MainNav>
         <LinksContainer>
           <div onClick={props.click}>  
-            <Link to='/'>HOME</Link>
+            <Link to='/gallery-hotel-web'>HOME</Link>
           </div>
           <div onClick={props.click}>
             <Link to='/location'>LOCATION</Link>
