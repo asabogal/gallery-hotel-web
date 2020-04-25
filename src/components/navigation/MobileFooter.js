@@ -1,14 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 import {Button} from '../utils/Buttons'
-import {Link} from 'react-router-dom';
 
 const MobileFooter = () => {
   return (
     <Container>
-      <Link to='/reserve'>
+      <a href='https://galleryhotelny.client.innroad.com'>
         <Button width='100vw' light>BOOK A ROOM</Button>
-      </Link>
+      </a>
     </Container>
   );
 };

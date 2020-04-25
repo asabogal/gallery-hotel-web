@@ -20,7 +20,7 @@ const NavHeader = (props) => {
         <img src={logo} alt='hotel-logo'/>
       </LogoContainer>
       <ReserveContainer>
-        <a href='https://clients.innroad.com/gallery/property.aspx'>
+        <a href='https://galleryhotelny.client.innroad.com'>
           <Button width='150px'>BOOK A ROOM</Button>
         </a>
       </ReserveContainer>

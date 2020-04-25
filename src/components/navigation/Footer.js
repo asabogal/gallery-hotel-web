@@ -50,7 +50,7 @@ const Footer = () => {
             <Link to='/policies'>Policies</Link>
           </li>
           <li>
-            <Link to='/reserve'>Reserve a Room</Link>
+            <a href='https://galleryhotelny.client.innroad.com'>Reserve a Room</a>
           </li>
         </ul>
       </LinksWrapper>
