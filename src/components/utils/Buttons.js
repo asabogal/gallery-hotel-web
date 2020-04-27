@@ -4,15 +4,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 export const Button = styled.button`
-  background-color: ${(props => props.light ? 'rgb(147, 233, 217)' : '#0c284f')};
-  color: ${(props => props.light ? '#0c284f' : 'white')};
+  background-color: ${(props => props.light ? 'rgb(147, 233, 217)' : 'white')};
+  color: ${(props => props.light ? '#0c284f' : '#0c284f')};
   font-size: ${(props => props.font || '12px')};
   height: ${(props => props.height || '45px')};
   width: ${(props => props.width || '180px')};
-  border: none;
+  border: ${(props => props.light ? 'none' : '2px solid #0c284f')};
   cursor: pointer;
   &:hover {
     background-color: ${(props => props.light ? '#7dd3c5' : '#274268')};
+    color: ${(props => props.light ? '#0c284f' : 'white')}
 }
 `;
 
