@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import styled from 'styled-components';
 import RoomCard from '../components/rooms/RoomCard';
 // data
@@ -7,6 +7,10 @@ import {roomData} from '../data/rooms/roomData';
 import {PageContainer, HeadingContainer} from '../components/utils/StyledLayouts';
 
 const Rooms = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
 
   const renderCards = () => {
     return roomData.map(room => {

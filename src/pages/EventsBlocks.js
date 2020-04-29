@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import styled from 'styled-components';
 import InfoBox from '../components/events_blocks/InfoBox';
 import ContactBox from '../components/events_blocks/ContactBox';
@@ -7,6 +7,11 @@ import ImageBox from '../components/events_blocks/ImageBox';
 import {PageContainer} from '../components/utils/StyledLayouts';
 
 const EventsBlocks = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+  
   return (
     <PageContainer>
       <PageWrapper>

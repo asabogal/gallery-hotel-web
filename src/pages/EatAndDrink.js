@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import styled from 'styled-components';
 import HeroHeader from '../components/eat_drink/HeroHeader';
 import InfoSection from '../components/eat_drink/InfoSection';
@@ -8,6 +8,11 @@ import Seating from '../components/eat_drink/Seating';
 import {PageContainer} from '../components/utils/StyledLayouts';
 
 const EatAndDrink = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+  
   return (
     <div>
       <HeroHeader/>

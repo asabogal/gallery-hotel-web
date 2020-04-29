@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import styled from 'styled-components';
 import Amenity from '../components/utils/Amenity';
 // styled
@@ -8,6 +8,10 @@ import {HeadingContainer} from '../components/utils/StyledLayouts';
 import {amenities} from '../data/amenities/Amenity';
 
 const Amenities = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
 
   const renderAmenities = () => {
     return amenities.map(amenity => {

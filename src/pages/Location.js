@@ -1,11 +1,16 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import styled from 'styled-components';
 import Text from '../components/location/Text';
 import GoogleMap from '../components/GoogleMap';
 // styled
 import {PageContainer} from '../components/utils/StyledLayouts';
- 
+
 const Location = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   return (
     <PageContainer>
       <Container>
