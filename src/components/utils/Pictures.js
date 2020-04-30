@@ -72,4 +72,13 @@ const ThumbnailInfo = styled.div`
     text-decoration: none;
     color: #0c284f;
   }
+  @media (max-width: 499px) {
+    h4 {
+      font-size: 16px;
+      letter-spacing: -0.8px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
 `;
