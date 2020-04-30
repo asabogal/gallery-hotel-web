@@ -17,8 +17,6 @@ const NavHeader = (props) => {
 
   return (
     <Container show={showHeader}>
-      {console.log('scrolling is', scrolling)}
-      {console.log('postion is', position)}
       <MenuBtnContainer onClick={props.toggleSideNav}>
         <MenuButton/>
         <p>Menu</p>
