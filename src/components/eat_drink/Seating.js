@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {Picture, Thumbnail} from '../utils/Pictures';
+import {Thumbnail} from '../utils/Pictures';
 // images
 import garden from '../../images/eat_drink/garden.jpeg';
 import oysters from '../../images/eat_drink/oysters.png';

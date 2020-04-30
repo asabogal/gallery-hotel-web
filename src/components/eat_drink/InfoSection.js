@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import {Thumbnail} from '../utils/Pictures';
-import {Button} from '../utils/Buttons';
 // images
 import dumplings from '../../images/eat_drink/dumplings.png';
 import drink from '../../images/eat_drink/drink1.png';

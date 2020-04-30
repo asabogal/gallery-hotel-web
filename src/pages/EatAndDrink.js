@@ -1,5 +1,4 @@
 import React, {useEffect} from 'react';
-import styled from 'styled-components';
 import HeroHeader from '../components/eat_drink/HeroHeader';
 import InfoSection from '../components/eat_drink/InfoSection';
 import Plates from '../components/eat_drink/Plates';
