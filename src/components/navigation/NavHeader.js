@@ -12,10 +12,13 @@ const NavHeader = (props) => {
   let position = scrollPosition.currentPosition;
 
   let showHeader;
-  if (position <= 0 && scrolling <= 1) showHeader = true;
+  if (scrolling <= -1) showHeader = true;
+  if (position <= 0 && scrolling >= 0) showHeader = true;
 
   return (
     <Container show={showHeader}>
+      {console.log('scrolling is', scrolling)}
+      {console.log('postion is', position)}
       <MenuBtnContainer onClick={props.toggleSideNav}>
         <MenuButton/>
         <p>Menu</p>
