@@ -10,7 +10,7 @@ const ArrivalCard = () => {
     <Container>
       <Card>
         <Top>
-          <img src={bus}></img>
+          <img src={bus} alt='bus-icon'></img>
           <p>Hapmton Jitney</p>
           <p>7 min. walk</p>
         </Top>
@@ -20,7 +20,7 @@ const ArrivalCard = () => {
       </Card>
       <Card>
         <Top>
-          <img src={train}></img>
+          <img src={train} alt='train-icon'></img>
           <p>L.I.R.R.</p>
           <p>7 min. walk</p>
         </Top>
@@ -30,7 +30,7 @@ const ArrivalCard = () => {
       </Card>
       <Card>
         <Top>
-          <img src={car}></img>
+          <img src={car} alt='car-icon'></img>
           <p>Long Island Expwy</p>
           <p>Hotel Parking</p>
         </Top>
