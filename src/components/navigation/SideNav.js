@@ -18,7 +18,7 @@ const SideNav = (props) => {
       <MainNav>
         <LinksContainer>
           <div onClick={props.click}>  
-            <Link to='/gallery-hotel-web'>HOME</Link>
+            <Link to='/'>HOME</Link>
           </div>
           <div onClick={props.click}>
             <Link to='/location'>LOCATION</Link>
@@ -39,7 +39,7 @@ const SideNav = (props) => {
             <Link to='/contact'>CONTACT US</Link>
           </div>
           <div onClick={props.click}>
-            <a href='https://galleryhotelny.client.innroad.com'>RESERVE</a>
+            <a href='https://galleryhotelny.client.innroad.com' target="_blank" rel="noopener noreferrer">RESERVE</a>
           </div>                                                             
         </LinksContainer>
         
