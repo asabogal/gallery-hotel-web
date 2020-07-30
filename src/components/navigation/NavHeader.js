@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import {MenuButton} from '../utils/Buttons';
 import logo from '../../images/gh_logo.svg';
 import {Button} from '../utils/Buttons';
+import {Link} from 'react-router-dom';
 
 const NavHeader = (props) => {
 
@@ -22,7 +23,9 @@ const NavHeader = (props) => {
         <p>Menu</p>
       </MenuBtnContainer>
       <LogoContainer>
-        <img src={logo} alt='hotel-logo'/>
+        <Link to='/'>
+          <img src={logo} alt='hotel-logo'/>
+        </Link>
       </LogoContainer>
       <ReserveContainer>
         <a href='https://galleryhotelny.client.innroad.com'>
