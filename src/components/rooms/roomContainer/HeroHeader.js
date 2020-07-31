@@ -60,7 +60,7 @@ const TextContainer = styled.div`
     font-weight: 600;
     font-size: 45px;
     margin: 0;
-    -webkit-text-stroke: 0.02rem #0c284f;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.45);
   }
   h5 {
     font-weight: 400;
@@ -68,12 +68,12 @@ const TextContainer = styled.div`
     padding-left: 20px;
     margin: 0;
     padding-top: 18px;
-    -webkit-text-stroke: 0.01rem #0c284f;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.45);
   }
   span {
     font-weight: 600;
     font-size: 28px;
-    -webkit-text-stroke: 0.01rem #0c284f;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.45);
   }
   @media (max-width: 1025px) {
     flex-direction: column;
@@ -101,7 +101,6 @@ const TextContainer = styled.div`
       font-size: 18px;
     }
   }
-
 `;
 
 const ButtonContainer = styled.div`
