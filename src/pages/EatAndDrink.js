@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react';
+import styled from 'styled-components';
 import HeroHeader from '../components/eat_drink/HeroHeader';
 import InfoSection from '../components/eat_drink/InfoSection';
 import Plates from '../components/eat_drink/Plates';
@@ -13,16 +14,23 @@ const EatAndDrink = () => {
   });
   
   return (
-    <div>
+    <>
       <HeroHeader/>
       <PageContainer>
+      <ContentWrapper>
         <InfoSection/>
-        <Plates/>
         <Seating/>
+        <Plates/>
+      </ContentWrapper>
       </PageContainer>
-    </div>
+    </>
   );
 };
 
 export default EatAndDrink;
 
+const ContentWrapper = styled.div`
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  gap: 5rem;
+`;
