@@ -9,14 +9,12 @@ const Plates = () => {
 
   return (
     <Container>
-        <ImageContainer>
-         <Thumbnail image={plate} alt='plate-picture' contain='contain'/>
-        </ImageContainer>
-        
-        <ImageContainer>
-          <Thumbnail image={rice} alt='rice-picture' contain='contain'/>
-        </ImageContainer>
-        
+      <ImageContainer>
+        <Thumbnail image={rice} alt='rice-picture' contain='contain'/>
+      </ImageContainer>
+      <ImageContainer>
+        <Thumbnail image={plate} alt='plate-picture' contain='contain'/>
+      </ImageContainer>
     </Container>
   );
 };
@@ -27,8 +25,11 @@ const Container = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 2rem;
-  width: 80%;
-  margin: 10vh auto;
+  width: 90%;
+  margin: 0 auto;
+  @media (max-width: 599px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const ImageContainer = styled.div`
