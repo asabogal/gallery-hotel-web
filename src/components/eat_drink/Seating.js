@@ -11,10 +11,10 @@ const Seating = () => {
   return (
     <Container>
       <TopSection>
-        <Info>
-          <h2>Indoor and Outdoor Service</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </Info>
+        <TextContainer>
+          <h2>Indoor and Outdoor</h2>
+          <p>Enjoy the full service Kon Tiki experience on our intimate dinning room, or our gorgeous backyard garden.</p>
+        </TextContainer>
         <Thumbnail 
           image={garden} 
           alt='arden-seating'
@@ -28,13 +28,6 @@ const Seating = () => {
           info='Service from 6pm - 11pm'
           />
         </TopSection>
-        <ImageContainer>
-        <Thumbnail 
-          image={oysters} 
-          alt='oysters'
-          contain='contain'
-          />
-          </ImageContainer>
     </Container>
   );
 };
@@ -43,7 +36,7 @@ export default Seating;
 
 const Container = styled.div`
   display: grid;
-  grid-template-rows: auto 90vh;
+  grid-template-rows: auto;
   grid-gap: 2rem;
 `;
 
@@ -54,11 +47,5 @@ const TopSection = styled.div`
   grid-gap: 2rem;
 `;
 
-const Info = styled.div`
-`;
-
-const ImageContainer = styled.div`
-  width: 100%;
-  height: 100%;
-  /* margin-left: 20vw; */
+const TextContainer = styled.div`
 `;

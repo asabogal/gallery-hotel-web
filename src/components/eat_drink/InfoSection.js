@@ -56,6 +56,10 @@ const InfoImage = styled.div`
 
 const TextContainer = styled.div`
   height: auto;
+  margin-bottom: 40px;
+  @media (max-width: 599px) {
+    margin-bottom: 0px;
+  }
 `;
 
 const ImageContainer = styled.div`
@@ -64,7 +68,7 @@ const ImageContainer = styled.div`
   grid-area: 1 / 2 / 3 / 3;
   @media (max-width: 599px) {
     height: 100%;
-  width: 100%;
+    width: 100%;
     grid-area: 2 / 1 / 3 / 2;
   }
 `;
