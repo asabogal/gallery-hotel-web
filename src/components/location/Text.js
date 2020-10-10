@@ -7,7 +7,7 @@ const Text = () => {
   return (
     <Container>
       <h2>Arrival</h2>
-      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>The hotel is within a fifteen minute drive from the Orient Point Ferry and a two minute drive from the North Ferry in Greenport. With public transportation, the Hampton Jitney stop and Long Island Railroad Train station are just a quick walk away.</p>
       <ArrivalCards />
       <h2>Local Spots</h2>
       <p>Greenport is Long Island's North Fork premier destination. Restaurants, shops and other area attractions are walking distance from the hotel. The east coast's best wineries and local farms are just a short drive away. Local transportation, designated driver service, and winery tours available.</p>
