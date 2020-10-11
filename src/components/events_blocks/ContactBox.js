@@ -15,9 +15,9 @@ const ContactBox = () => {
       </TextContainer>
       <RequestContainer>
       <h3>REQUEST A PROPOSAL</h3>
-      <Link to='/contact'>
-        <Button >Contact Us</Button>
-      </Link>
+      <a href="mailto:info@galleryhotelny.com">
+        <Button >Email Us</Button>
+      </a>
     </RequestContainer>
     </Container>
   );
@@ -33,7 +33,7 @@ const Container = styled.div`
   padding: 10px 20px;
   text-align: left;
   background-color: white;
-  margin-top: 40px;
+  margin: 40px 20px;
   h4, h3 {
     font-size: 1.0rem;
   }
@@ -52,7 +52,4 @@ const TextContainer = styled.div`
 
 const RequestContainer = styled.div`
   text-align: center;
-  button {
-    margin-top: 10px;
-  }
 `;
