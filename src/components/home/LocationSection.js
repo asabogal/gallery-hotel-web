@@ -1,49 +1,52 @@
 import React from 'react';
 import styled from 'styled-components';
+import {TwoColCaptionImage} from '../utils/StyledLayouts';
 import {Picture} from '../utils/Pictures';
 import vintagemap from '../../images/home/location/vintagemap.jpg';
 import {Thumbnail} from '../utils/Pictures';
+// images
 import beach from '../../images/home/location/beach.png';
 
 
 
 const VintageMap = () => {
   return (
-    <Container>
+    <TwoColCaptionImage height='90vh'>
       <MapContainer>
         <Picture picture={vintagemap} alt='vintage-map'/>
       </MapContainer>
-      <InfoContainer>
-        <TextContainer>
-          <h2>Your Destination</h2>
-          <p>Discover local farms, restaurants, shops, and the North Fork's best wines..........
-             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </TextContainer>
-        <ImageContainer>
-          <Thumbnail 
-            image={beach} 
-            alt='garden-image'
-            heading='Discover the area'
-            info='Get to know the North Fork'
-            link='/location'
-            />
-        </ImageContainer>
-      </InfoContainer>
-    </Container>
+      <TextContainer>
+        <h2>Your Destination</h2>
+        <p>Welcome to the North Fork. Long Island's "Wine Country". There are over 60 vineyards, breweries and distilleries. Multiple harvests along the fork provide offerings from land and sea, sourcing small farmers and fish markets, as well as distiguished local restaurants, including ours. The area is surrounded by beautiful waters ideal to escape onto isolated beaches or experience maritime culture and activities. The town of Greenport is where the action is. Numerous shops, restaurants and bars, all withing walking distance of our hotel, will make your stay a pleasant one.</p>
+      </TextContainer>
+      <ImageContainer>
+        <Thumbnail 
+          image={beach} 
+          alt='garden-image'
+          heading='Discover the area'
+          info='Get to know the North Fork'
+          link='/location'
+          />
+      </ImageContainer>
+    </TwoColCaptionImage>
   );
 };
 
 export default VintageMap;
 
-const Container = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-`;
-
 const MapContainer = styled.div`
   height: auto;
-  margin: 0 auto;
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  padding: 5%;
+  @media (max-width: 1099px) {
+    grid-row: 2 / 3;
+    height: auto;
+  }
+  @media (max-width: 599px) {
+    grid-row: 2 / 3;
+    height: 50vh;
+  }
 `;
 const InfoContainer = styled.div`
   display: flex;
@@ -54,6 +57,4 @@ const InfoContainer = styled.div`
 const TextContainer = styled.div`
 `;
 const ImageContainer = styled.div`
-  height: 40vh;
-  align-self: center;
 `;
