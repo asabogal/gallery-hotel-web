@@ -29,6 +29,6 @@ export default EventsBlocks;
 
 const PageWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
   gap: 40px;
 `;
