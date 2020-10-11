@@ -13,7 +13,7 @@ const AboutSection = () => {
       <TopSection>
         <Info>
           <h2>Boutique Hotel and Art Gallery in Greenport</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p>Mid century pop art meets contemporary chic. </p>
         </Info>
         <Thumbnail 
           image={livingroom} 
@@ -32,7 +32,7 @@ const AboutSection = () => {
         </TopSection>
         <HotelImageContainer>
             <Picture picture={hotel} alt='hotel-image'/>
-          </HotelImageContainer>
+        </HotelImageContainer>
     </Container>
   );
 };
@@ -50,6 +50,10 @@ const TopSection = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(320px, 2fr));
   justify-content: center;
   grid-gap: 2rem;
+  @media (max-width: 1024px) and (min-width: 599px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 180px);
+  }
 `;
 
 const Info = styled.div`
@@ -59,4 +63,8 @@ const HotelImageContainer = styled.div`
   width: 50vw;
   height: auto;
   margin-left: 20vw;
+  @media (max-width: 1023px) {
+    width: 100%;
+    margin: 0;
+  }
 `;
