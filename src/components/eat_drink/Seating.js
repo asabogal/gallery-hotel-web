@@ -45,6 +45,10 @@ const TopSection = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(320px, 2fr));
   justify-content: center;
   grid-gap: 2rem;
+  @media (max-width: 1024px) and (min-width: 599px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 280px 280px;
+  }
 `;
 
 const TextContainer = styled.div`
