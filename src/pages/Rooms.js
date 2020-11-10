@@ -31,7 +31,7 @@ const Rooms = () => {
     <PageContainer>
       <HeadingContainer>
         <h1>Our Rooms</h1>
-        <h3>The hotel features 8 rooms, and 2 luxury suites. All come with Sumptuous Bedding, Indulgent Minibars, 100% Egyptian Cotton Bathrobes, and Complimentary Wireless Internet. Rooms with Sundeck available.</h3>
+        <h3>The hotel features 8 rooms, and 2 luxury suites. All include Sumptuous Bedding, Indulgent Minibars, 100% Egyptian Cotton Bathrobes, and Complimentary Wireless Internet. Rooms with Sundeck available.</h3>
       </HeadingContainer>
       <Container>
         {renderCards()}
