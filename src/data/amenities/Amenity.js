@@ -21,7 +21,7 @@ export const amenities = [
   },
   {
     heading: 'Rooms',
-    description: 'The Gallery offers 8 guest rooms and 2 suites, each of which is uniquely decorated. And though no two accommodations are the same, guests rave about our full range of room amenities, which include complementary high-speed internet access, flat-screen TVs, hair dryers, and fully stocked food and beverage minibars.',
+    description: 'The Gallery offers 8 guest rooms and 2 suites, each of which is uniquely decorated. And though no two accommodations are the same, guests rave about our full range of room amenities, which include complementary high-speed internet access, flat-screen TVs, bathrobes, hair dryers, and fully stocked food and beverage minibars.',
     link: '/rooms'
   },
   {
