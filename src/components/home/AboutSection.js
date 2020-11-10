@@ -13,7 +13,7 @@ const AboutSection = () => {
       <TopSection>
         <Info>
           <h2>Boutique Hotel and Art Gallery in Greenport</h2>
-          <p>Mid century pop art meets contemporary chic. </p>
+          <p>The Gallery Hotel opened in May of 2014 and is situated right in the beating heart of Greenport, one of the North Fork’s most exciting cultural and historic destinations. The Gallery offers contemporary modern design touches, such as quirky, colorful interior decorations, comfortable tea and work areas, and of course our thoughtfully curated art gallery space. Guests have come to love this beautifully designed property and its outstanding customer service, which in only a few years has grown a loyal group of returning patrons and celebrities alike.</p>
         </Info>
         <Thumbnail 
           image={livingroom} 

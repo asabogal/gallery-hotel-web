@@ -12,7 +12,7 @@ const EatDrinkSection = () => {
     <TwoColCaptionImage height='90vh'>
       <TextContainer>
         <h2>Eat & Drink</h2>
-        <p>Tropical Vibes and Eclectic Flavors. You'll fall in love with the food and ambiance of our little Oasis.</p>
+        <p>The Gallery Hotel’s in-house restaurant Kontiki features a dining experience unlike any other in the region. Award winning food and an extensive and meticulously designed cocktail menu will ensure a memorable experience for all guests. But of course, we might have a slight bias on the matter, so <a href='https://www.edibleeastend.com/2017/10/02/eat-at-kon-tiki-in-greenport/'>here</a> is what others are saying</p>
       </TextContainer>
       <InfoImages>
         <Thumbnail 
