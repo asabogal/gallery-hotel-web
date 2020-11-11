@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import Layout from './components/hoc/Layout';
 import HomePage from './pages/HomePage';
@@ -19,7 +19,7 @@ const App = () => {
     <BrowserRouter>
       <Layout>
         <Switch>
-            <Route exact path='/gallery-hotel-web' component={HomePage}/>
+            <Route exact path='/' component={HomePage}/>
             <Route exact path='/location' component={Location}/>
             <Route exact path='/amenities' component={Amenities}/>
             <Route exact path= '/amenities/:name' render={props => <AmenitiesGallery {...props}/>}/>
