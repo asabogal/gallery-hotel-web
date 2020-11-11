@@ -18,7 +18,7 @@ const Policies = () => {
           <li>Check-out is anytime before 11am. </li>
           <h5> * Early Check-in and/or Late Check-out available on request. Additional charges may apply.</h5>
           <li>We assume no responsibility for loss of money, jewels, or other valuables. The Hotel is not responsible for contents left in your room or vehicle on property. The property is not responsible for unclaimed items after more than 14 days from the date it was turned in.</li>
-          <li>We reserve the right to admit, check-in, and/or serve individuals who appear intoxicated, and/or otherwise, not in an sane state of mind.</li>
+          <li>We reserve the right to admit, check-in, and/or serve individuals who appear intoxicated, and/or otherwise, not in a sane state of mind.</li>
         </ul>
         <h4>Cancellations</h4>
         <ul>

@@ -9,7 +9,7 @@ const HotelRules = () => {
         <h4>HOTEL RULES</h4>
       </Title>
       <TextContainer>
-       <p>We reserve the right to admit, check-in, and/or serve individuals who appear intoxicated, and/or otherwise, not in an sane state of mind. Acts of violence or unruly behavior will be reported to local authorities and may be subject to expulsion from the Hotel premises.</p>
+       <p>We reserve the right to admit, check-in, and/or serve individuals who appear intoxicated, and/or otherwise, not in a sane state of mind. Acts of violence or unruly behavior will be reported to local authorities and may be subject to expulsion from the Hotel premises.</p>
         <ul>
           <li>Check-In: 3pm</li>
           <li>Check-Out: 11am</li>
