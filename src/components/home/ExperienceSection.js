@@ -14,7 +14,7 @@ const ExperienceSection = () => {
           image={lounge} 
           alt='lounge-image'
           heading='Lounge'
-          info='Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+          info='Contemporary art meets mid-century decor'
           link='/amenities/gallery'
           />
       </MainImage>
