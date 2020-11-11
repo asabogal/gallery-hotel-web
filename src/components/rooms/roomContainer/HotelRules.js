@@ -9,7 +9,7 @@ const HotelRules = () => {
         <h4>HOTEL RULES</h4>
       </Title>
       <TextContainer>
-       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+       <p>We reserve the right to admit, check-in, and/or serve individuals who appear intoxicated, and/or otherwise, not in an sane state of mind. Acts of violence or unruly behavior will be reported to local authorities and may be subject to expulsion from the Hotel premises.</p>
         <ul>
           <li>Check-In: 3pm</li>
           <li>Check-Out: 11am</li>
@@ -46,7 +46,7 @@ const TextContainer = styled.div`
     font-weight: 200;
   }
   a {
-    text-decoration: none;
+    text-decoration: underline;
     color: inherit;
     :hover {
       text-decoration: underline;
