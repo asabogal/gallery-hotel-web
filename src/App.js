@@ -12,6 +12,7 @@ import EventsBlocks from './pages/EventsBlocks';
 import Menu from './components/eat_drink/Menu';
 import ContactUs from './pages/ContactUs';
 import Policies from './pages/Policies';
+import RedirectRoute from './routing/RedirectRoute';
 
 
 const App = () => {
@@ -30,6 +31,7 @@ const App = () => {
             <Route exact path='/events_blocks' component={EventsBlocks}/>
             <Route exact path='/contact' component={ContactUs}/>
             <Route exact path='/policies' component={Policies}/>
+            <RedirectRoute path='*'/>
           </Switch>
       </Layout>
     </BrowserRouter>
