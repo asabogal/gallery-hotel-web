@@ -66,7 +66,7 @@ import accessible from '../../images/rooms/icons/room_page/accessibility.svg';
 export const roomData = [
   {
     name: 'Standard Queen',
-    avgRate: 288,
+    avgRate: 220,
     roomType: 'Guest Room',
     sleeps: 2,
     maxSleeps: null,
@@ -82,7 +82,7 @@ export const roomData = [
       'Pressure Shower': shower,
       'Acca Kappa Toiletries': toiletries,
       'Bathrobes': bathrobes,
-      '400 Thread Count Bedding': bedding,
+      '450 Thread Count Bedding': bedding,
       'Indulgent Minibar': minibar,
       'Flat Screen & Cable TV': tv,
       'High-Speed Wi-Fi': wifi,
@@ -108,7 +108,7 @@ export const roomData = [
 
   {
     name: 'King Loft',
-    avgRate: 323,
+    avgRate: 240,
     roomType: 'Guest Room',
     sleeps: 2,
     maxSleeps: null,
@@ -124,7 +124,7 @@ export const roomData = [
       'Pressure Shower': shower,
       'Acca Kappa Toiletries': toiletries,
       'Bathrobes': bathrobes,
-      '400 Thread Count Bedding': bedding,
+      '450 Thread Count Bedding': bedding,
       'Indulgent Minibar': minibar,
       'Flat Screen & Cable TV': tv,
       'High-Speed Wi-Fi': wifi,
@@ -148,7 +148,7 @@ export const roomData = [
 
   {
     name: 'Queen With Deck',
-    avgRate: 323,
+    avgRate: 240,
     roomType: 'Guest Room',
     sleeps: 2,
     maxSleeps: null,
@@ -166,7 +166,7 @@ export const roomData = [
       'Pressure Shower': shower,
       'Acca Kappa Toiletries': toiletries,
       'Bathrobes': bathrobes,
-      '400 Thread Count Bedding': bedding,
+      '450 Thread Count Bedding': bedding,
       'Indulgent Minibar': minibar,
       'Flat Screen & Cable TV': tv,
       'High-Speed Wi-Fi': wifi,
@@ -185,7 +185,7 @@ export const roomData = [
 
   {
     name: 'King With Deck',
-    avgRate: 353,
+    avgRate: 280,
     roomType: 'Guest Room',
     sleeps: 2,
     maxSleeps: null,
@@ -203,7 +203,7 @@ export const roomData = [
       'Pressure Shower': shower,
       'Acca Kappa Toiletries': toiletries,
       'Bathrobes': bathrobes,
-      '400 Thread Count Bedding': bedding,
+      '450 Thread Count Bedding': bedding,
       'Indulgent Minibar': minibar,
       'Flat Screen & Cable TV': tv,
       'High-Speed Wi-Fi': wifi,
@@ -222,7 +222,7 @@ export const roomData = [
 
   {
     name: 'Garden Suite',
-    avgRate: 550,
+    avgRate: 450,
     roomType: 'Suite',
     sleeps: 4,
     maxSleeps: 6,
@@ -243,7 +243,7 @@ export const roomData = [
       'Pressure Shower': shower,
       'Acca Kappa Toiletries': toiletries,
       'Bathrobes': bathrobes,
-      '400 Thread Count Bedding': bedding,
+      '450 Thread Count Bedding': bedding,
       'Indulgent Minibar': minibar,
       'Flat Screen & Cable TV': tv,
       'High-Speed Wi-Fi': wifi,
@@ -283,7 +283,7 @@ export const roomData = [
       'Tub/Jacuzzi': jacuzzi,
       'Acca Kappa Toiletries': toiletries,
       'Bathrobes': bathrobes,
-      '400 Thread Count Bedding': bedding,
+      '450 Thread Count Bedding': bedding,
       'Indulgent Minibar': minibar,
       'Flat Screen & Apple TV': tv,
       'High-Speed Wi-Fi': wifi,
