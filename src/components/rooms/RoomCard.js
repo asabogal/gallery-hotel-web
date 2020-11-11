@@ -36,7 +36,7 @@ export default RoomCard;
 
 const Container = styled.div`
   display: grid;
-  grid-template-rows: ${props => props.small ? '40% 60%' : '50% 50%'};
+  grid-template-rows: ${props => props.small ? '30% 70%' : '50% 50%'};
   @media (max-width: 620px) {
     grid-template-rows: auto auto;
   }
