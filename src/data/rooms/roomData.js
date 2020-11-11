@@ -29,7 +29,6 @@ import deck2 from '../../images/rooms/room_pictures/deck/deck2.png';
 import deck3 from '../../images/rooms/room_pictures/deck/deck3.png';
 // other
 import minibarImage from '../../images/rooms/room_pictures/other/minibar.png';
-import breakfast from '../../images/rooms/room_pictures/other/breakfast.png';
 import dresser from '../../images/rooms/room_pictures/other/dresser.png';
 
 // large icons
@@ -71,7 +70,7 @@ export const roomData = [
     roomType: 'Guest Room',
     sleeps: 2,
     maxSleeps: null,
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    description: 'Our more affordable rooms. These moderate size rooms have street side views, include a Queen size bed, 450 thread linens, and sleek décor. Refresh in the bathroom with high pressured shower, illuminated vanity mirrors, premium toiletries, hair dryer and cozy bathrobe. Enjoy complimentary high-speed Wi-Fi, a flat-screen TV, and fully stocked food and beverage minibar.',
     cardFeatures: {
       'Sleeps Two': twoPersonsLarge,
       'Bed Type': queenBedLarge,
@@ -113,7 +112,7 @@ export const roomData = [
     roomType: 'Guest Room',
     sleeps: 2,
     maxSleeps: null,
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    description: 'These King size bedrooms have loft ceilings, bigger floor space and garden views. They include a King size bed, 450 thread linens, and sleek décor. Refresh in the bathroom with high pressured shower, illuminated vanity mirrors, premium toiletries, hair dryer and cozy bathrobe. Enjoy complimentary high-speed Wi-Fi, a flat-screen TV, and fully stocked food and beverage minibar.',
     cardFeatures: {
       'Sleeps Two': twoPersonsLarge,
       'Bed Type': kingBedLarge,
@@ -153,7 +152,7 @@ export const roomData = [
     roomType: 'Guest Room',
     sleeps: 2,
     maxSleeps: null,
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    description: 'Our premium Queen size bedroom. This room offers bigger floorspace than our Standard Queen rooms, have a private sundeck and garden views. It includes a Queen size bed, 450 thread linens, and sleek décor. Refresh in the bathroom with high pressured shower, illuminated vanity mirrors, premium toiletries, hair dryer and cozy bathrobe. Enjoy complimentary high-speed Wi-Fi, a flat-screen TV, and fully stocked food and beverage minibar.',
     cardFeatures: {
       'Sleeps Two': twoPersonsLarge,
       'Bed Type': queenBedLarge,
@@ -190,7 +189,7 @@ export const roomData = [
     roomType: 'Guest Room',
     sleeps: 2,
     maxSleeps: null,
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    description: 'Our premium King size bedroom. It has a private sundeck and garden views. It includes a King size bed, 450 thread linens, and sleek décor. Refresh in the bathroom with high pressured shower, illuminated vanity mirrors, premium toiletries, hair dryer and cozy bathrobe. Enjoy complimentary high-speed Wi-Fi, a flat-screen TV, and fully stocked food and beverage minibar.',
     cardFeatures: {
       'Sleeps Two': twoPersonsLarge,
       'Bed Type': kingBedLarge,
@@ -227,7 +226,7 @@ export const roomData = [
     roomType: 'Suite',
     sleeps: 4,
     maxSleeps: 6,
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    description: 'Our double room. This suite is ideal for group stays. It offers a small living room space, 2 Queen beds, 2 sofa beds, 450 thread linens, and sleek décor. Refresh in the bathroom with high pressured shower, illuminated vanity mirrors, premium toiletries, hair dryer and cozy bathrobe. Enjoy complimentary high-speed Wi-Fi, a flat-screen TV, and fully stocked food and beverage minibar.',
     cardFeatures: {
       'Sleeps Four': fourPersonsLarge,
       'Bed Type': queenBedLarge,
@@ -267,7 +266,7 @@ export const roomData = [
     roomType: 'Suite',
     sleeps: 2,
     maxSleeps: 3,
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    description: 'Our top tier, luxury room. Your own private studio apartment with premium service and hospitality. This suite includes a King size bed, one sofa bed, kitchenette, living room space, private sundeck, and garden views. Refresh and indulge in the bathroom with a full size jet jacuzzi, dual sinks and illuminated vanity mirrors, premium toiletries, hair dryer and cozy bathrobes. Enjoy complimentary high-speed Wi-Fi, Apple TV, 65-inch flat-screen TV, and fully stocked food and beverage minibar.',
     cardFeatures: {
       'Sleeps Three': threePersonsLarge,
       'Bed Type': kingBedLarge,
