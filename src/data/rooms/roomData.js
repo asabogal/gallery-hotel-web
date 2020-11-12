@@ -103,7 +103,8 @@ export const roomData = [
       }
     },
     link: '/rooms/standard',
-    path: 'standard'
+    path: 'standard',
+    bookURL: 'https://galleryhotelny.client.innroad.com/room/19817'
   },
 
   {
@@ -143,7 +144,8 @@ export const roomData = [
       },
     },
     link: '/rooms/kingloft',
-    path: 'kingloft'
+    path: 'kingloft',
+    bookURL: 'https://galleryhotelny.client.innroad.com/room/19816'
   },
 
   {
@@ -180,7 +182,8 @@ export const roomData = [
       other: [deck1, deck2, deck3]
     },
     link: '/rooms/queendeck',
-    path: 'queendeck'
+    path: 'queendeck',
+    bookURL: 'https://galleryhotelny.client.innroad.com/room/19725'
   },
 
   {
@@ -217,7 +220,8 @@ export const roomData = [
       other: [deck1, deck2, deck3]
     },
     link: '/rooms/kingdeck',
-    path: 'kingdeck'
+    path: 'kingdeck',
+    bookURL: 'https://galleryhotelny.client.innroad.com/room/19724'
   },
 
   {
@@ -257,7 +261,8 @@ export const roomData = [
       other: [gardenSuite, gardenSuite2, gardenSuite4, gardenSuite3]
     },
     link: '/rooms/gardensuite',
-    path: 'gardensuite'
+    path: 'gardensuite',
+    bookURL: 'https://galleryhotelny.client.innroad.com/room/19818'
   },
 
   {
@@ -297,6 +302,7 @@ export const roomData = [
       other: [privateSuite2, privateSuite3, privateSuite4, privateSuiteTub, privateSuiteDeck]
     },
     link: '/rooms/privatesuite',
-    path: 'privatesuite'
+    path: 'privatesuite',
+    bookURL: 'https://galleryhotelny.client.innroad.com/room/19819'
   }
 ]
