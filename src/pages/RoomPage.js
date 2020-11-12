@@ -39,6 +39,7 @@ const RoomPage = (props) => {
         image={room.images.heroImage}
         name={room.name}
         avgRate={room.avgRate}
+        bookURL={room.bookURL}
       />
       <PageContainer>
         <Content>

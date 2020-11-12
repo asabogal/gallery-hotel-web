@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Hero from '../../utils/Hero';
 import {Button} from '../../utils/Buttons';
 
-const HeroHeader = ({name, avgRate, image}) => {
+const HeroHeader = ({name, avgRate, image, bookURL}) => {
 
   const content = () => {
     return (
@@ -13,7 +13,7 @@ const HeroHeader = ({name, avgRate, image}) => {
           <h5><span>${avgRate}</span> / avg rate</h5>
         </TextContainer>
         <ButtonContainer>
-          <a href='https://galleryhotelny.client.innroad.com'>
+          <a href={bookURL}>
             <Button light>BOOK NOW</Button>
           </a>
         </ButtonContainer>
