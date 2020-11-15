@@ -49,6 +49,7 @@ const ImageContainer = styled.div`
 const InfoContainer = styled.div`
   display: grid;
   grid-template-rows: auto auto auto auto;
+  padding-bottom: 20px;
   p {
     font-size: 14px;
   }
