@@ -46,7 +46,10 @@ const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-template-rows: auto auto;
-  grid-gap: 5vw;
+  grid-gap: 3vh;
   background-color: white;
   margin-top: 50px;
+  @media (max-width: 599px) {
+    grid-gap: 7vh;
+  }
 `;
