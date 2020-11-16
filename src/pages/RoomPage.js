@@ -131,8 +131,7 @@ const RoomCards = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 2fr));
   grid-template-rows: auto auto;
-  grid-gap: 30px;
-  /* margin-top: 50px; */
+  column-gap: 15px;
   padding: 10px 30px;
   h4, p {
     color: white;

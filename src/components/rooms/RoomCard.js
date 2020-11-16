@@ -40,6 +40,9 @@ const Container = styled.div`
   @media (max-width: 620px) {
     grid-template-rows: auto auto;
   }
+  @media (min-width: 1800px) {
+    grid-template-rows: 50% 50%;
+  }
 `;
 
 const ImageContainer = styled.div`
