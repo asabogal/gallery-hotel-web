@@ -50,6 +50,7 @@ const MainImage = styled.div`
   @media (max-width: 599px) {
     grid-row: 2 / 3;
     height: 50vh;
+    width: 100%;
   }
 `;
 
