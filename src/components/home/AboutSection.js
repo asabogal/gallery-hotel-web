@@ -52,7 +52,7 @@ const TopSection = styled.div`
   grid-gap: 2rem;
   @media (max-width: 1024px) and (min-width: 599px) {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 180px);
+    grid-template-rows: repeat(3, 320px);
   }
 `;
 
