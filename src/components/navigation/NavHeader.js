@@ -54,7 +54,7 @@ const Container = styled.div`
   @media (max-width: 599px) {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 40px;
-    height: 50px;
+    height: 52px;
     align-items: flex-start;
     p {
       font-size: 12px;
@@ -70,7 +70,13 @@ const MenuBtnContainer = styled.div`
   align-items: center;
   justify-self: self-start;
   p {
-    margin-left: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  @media (max-width: 599px) {
+    p {
+      font-size: 16px;
+    }
   }
   
 `;
@@ -87,7 +93,7 @@ const LogoContainer = styled.div`
     justify-self: self-end;
     img {
       width: 100%;
-      height: 40px;
+      height: 50px;
     }
   } 
 `;
