@@ -68,6 +68,9 @@ const Slider = styled.div`
   align-items: center;
   margin: 40px auto;
   overflow: hidden;
+  @media (max-width: 599px) {
+    width: 90%;
+  }
 `;
 
 const Slide = styled.div`
