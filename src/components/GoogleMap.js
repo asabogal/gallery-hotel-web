@@ -32,7 +32,6 @@ const Map = (props) => {
       defaultCenter={{lat: 41.104491, lng: -72.360118}}
       defaultOptions={{styles: mapStyle}}
     >
-          {console.log('props', props)}
       <Marker 
         position={{lat: 41.104491, lng: -72.360118}}
         icon={hotel}

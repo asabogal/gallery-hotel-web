@@ -52,9 +52,7 @@ const Hero = ({images, height, contentTop, contentBottom}) => {
 
   return (
     <Slider>
-      {console.log(images)}
-      {renderImages(images)}
-      
+      {renderImages(images)}     
     </Slider>    
   )
 };
