@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import {Thumbnail} from '../utils/Pictures';
 // images
 import garden from '../../images/eat_drink/garden.jpeg';
-import oysters from '../../images/eat_drink/oysters.png';
 import dinningRoom from '../../images/eat_drink/dinningroom.png';
 
 

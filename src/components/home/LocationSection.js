@@ -48,11 +48,6 @@ const MapContainer = styled.div`
     height: 50vh;
   }
 `;
-const InfoContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin-top: 5vh;
-`;
 
 const TextContainer = styled.div`
 `;
