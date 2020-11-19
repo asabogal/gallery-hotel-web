@@ -16,12 +16,12 @@ export const amenities = [
   },
   {
     heading: 'Movie and Media Room',
-    description: 'While watching a movie while cuddled up in your bedroom may be a personal favorite, the hotel’s 10 person Movie and Media room features a massive projection display for a more exhilarating watching experience.',
+    description: 'While watching a movie cuddled up in your bedroom may be a personal favorite, the hotel’s 10 person Movie and Media room features a massive projection display for a more exhilarating watching experience.',
     link: '/amenities/media'
   },
   {
     heading: 'Rooms',
-    description: 'The Gallery offers 8 guest rooms and 2 suites, each of which is uniquely decorated. And though no two accommodations are the same, guests rave about our full range of room amenities, which include complementary high-speed internet access, flat-screen TVs, bathrobes, hair dryers, and fully stocked food and beverage minibars.',
+    description: 'The Gallery offers 8 guest rooms and 2 suites, each of which is uniquely decorated, and though no two accommodations are the same, guests rave about our full range of room amenities, which include complementary high-speed internet access, flat-screen TVs, bathrobes, hair dryers, and fully stocked food and beverage minibars.',
     link: '/rooms'
   },
   {
@@ -39,7 +39,7 @@ export const amenities = [
   },
   {
     heading: 'Continental Breakfast',
-    description: 'Daily continental breakfast included with the weekend room rates. Healthy and essential assorted items perfect to start your day as you relax with a delicious Espresso on our sunny Garden. *COVID-19 restrictions apply',
+    description: 'Daily continental breakfast included with the weekend room rates. Healthy and essential assorted items perfect to start your day as you relax with a delicious Espresso on our sunny Garden. *COVID-19 restrictions and limited items apply.',
   },
   {
     heading: 'Private Parking',

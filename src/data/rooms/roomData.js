@@ -70,7 +70,7 @@ export const roomData = [
     roomType: 'Guest Room',
     sleeps: 2,
     maxSleeps: null,
-    description: 'Our more affordable rooms. These moderate size rooms have street side views, include a Queen size bed, 450 thread linens, and sleek décor. Refresh in the bathroom with high pressured shower, illuminated vanity mirrors, premium toiletries, hair dryer and cozy bathrobe. Enjoy complimentary high-speed Wi-Fi, a flat-screen TV, and fully stocked food and beverage minibar.',
+    description: 'Our more affordable rooms. These moderate size rooms have street side views, include a Queen size bed, 450 thread linens, and sleek décor. Refresh in the bathroom with a high pressured shower, illuminated vanity mirrors, premium toiletries, hair dryer and cozy bathrobes. Enjoy complimentary high-speed Wi-Fi, a flat-screen TV, and fully stocked food and beverage minibar.',
     cardFeatures: {
       'Sleeps Two': twoPersonsLarge,
       'Bed Type': queenBedLarge,
@@ -113,7 +113,7 @@ export const roomData = [
     roomType: 'Guest Room',
     sleeps: 2,
     maxSleeps: null,
-    description: 'These King size bedrooms have loft ceilings, larger floor space and garden views. They include a King size bed, 450 thread linens, and sleek décor. Refresh in the bathroom with high pressured shower, illuminated vanity mirrors, premium toiletries, hair dryer and cozy bathrobe. Enjoy complimentary high-speed Wi-Fi, a flat-screen TV, and fully stocked food and beverage minibar.',
+    description: 'These King size bedrooms have loft ceilings, larger floor space and garden views. They include a King size bed, 450 thread linens, and sleek décor. Refresh in the bathroom with a high pressured shower, illuminated vanity mirrors, premium toiletries, hair dryer and cozy bathrobes. Enjoy complimentary high-speed Wi-Fi, a flat-screen TV, and fully stocked food and beverage minibar.',
     cardFeatures: {
       'Sleeps Two': twoPersonsLarge,
       'Bed Type': kingBedLarge,
@@ -154,7 +154,7 @@ export const roomData = [
     roomType: 'Guest Room',
     sleeps: 2,
     maxSleeps: null,
-    description: 'Our premium Queen size bedroom. This room offers larger floorspace than our Standard Queen rooms, have a private sundeck and garden views. It includes a Queen size bed, 450 thread linens, and sleek décor. Refresh in the bathroom with high pressured shower, illuminated vanity mirrors, premium toiletries, hair dryer and cozy bathrobe. Enjoy complimentary high-speed Wi-Fi, a flat-screen TV, and fully stocked food and beverage minibar.',
+    description: 'Our premium Queen size bedroom. This room offers larger floorspace than our Standard Queen rooms, have a private sundeck and garden views. It includes a Queen size bed, 450 thread linens, and sleek décor. Refresh in the bathroom with a high pressured shower, illuminated vanity mirrors, premium toiletries, hair dryer and cozy bathrobes. Enjoy complimentary high-speed Wi-Fi, a flat-screen TV, and fully stocked food and beverage minibar.',
     cardFeatures: {
       'Sleeps Two': twoPersonsLarge,
       'Bed Type': queenBedLarge,
@@ -192,7 +192,7 @@ export const roomData = [
     roomType: 'Guest Room',
     sleeps: 2,
     maxSleeps: null,
-    description: 'Our premium King size bedroom. It has a private sundeck and garden views. It includes a King size bed, 450 thread linens, and sleek décor. Refresh in the bathroom with high pressured shower, illuminated vanity mirrors, premium toiletries, hair dryer and cozy bathrobe. Enjoy complimentary high-speed Wi-Fi, a flat-screen TV, and fully stocked food and beverage minibar.',
+    description: 'Our premium King size bedroom. It has a private sundeck and garden views. It includes a King size bed, 450 thread linens, and sleek décor. Refresh in the bathroom with a high pressured shower, illuminated vanity mirrors, premium toiletries, hair dryer and cozy bathrobes. Enjoy complimentary high-speed Wi-Fi, a flat-screen TV, and fully stocked food and beverage minibar.',
     cardFeatures: {
       'Sleeps Two': twoPersonsLarge,
       'Bed Type': kingBedLarge,
@@ -230,7 +230,7 @@ export const roomData = [
     roomType: 'Suite',
     sleeps: 4,
     maxSleeps: 6,
-    description: 'Our double room. This suite is ideal for group stays. It offers a small living room space, 2 Queen beds, 2 sofa beds, 450 thread linens, and sleek décor. Refresh in the bathroom with high pressured shower, illuminated vanity mirrors, premium toiletries, hair dryer and cozy bathrobe. Enjoy complimentary high-speed Wi-Fi, a flat-screen TV, and fully stocked food and beverage minibar.',
+    description: 'Our double room. This suite is ideal for group stays. It offers a small living room space, 2 Queen beds, 2 sofa beds, 450 thread linens, and sleek décor. Refresh in the bathroom with a high pressured shower, illuminated vanity mirrors, premium toiletries, hair dryer and cozy bathrobes. Enjoy complimentary high-speed Wi-Fi, a flat-screen TV, and fully stocked food and beverage minibar.',
     cardFeatures: {
       'Sleeps Four': fourPersonsLarge,
       'Bed Type': queenBedLarge,
