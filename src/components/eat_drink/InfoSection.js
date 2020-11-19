@@ -10,8 +10,8 @@ const InfoSection = () => {
     <Container>
       <TextContainer>
         <h2>Taste Reimagined</h2>
-        <p>KonTiki is one of the North Fork’s most intriguing restaurants and bars. Chef Cheo brings an unique blend of Asian and Latin American cuisines, while our full bar offers the best in exotic and tropical flavors.</p>
-        <p><strong><i>KonTiki offers seasonal service from Memorial Day Weekend through November 30th - Friday & Saturday</i></strong></p>
+        <p>Kon Tiki is one of the North Fork’s most intriguing restaurants and bars. Chef Cheo brings an unique blend of Asian and Latin American cuisines, while our full bar offers the best in exotic and tropical flavors.</p>
+        <p><strong><i>Kon Tiki offers seasonal service from Memorial Day Weekend through November 30th - Friday & Saturday</i></strong></p>
       </TextContainer>
       <ImageContainer>
         <Thumbnail 

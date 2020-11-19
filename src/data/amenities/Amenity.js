@@ -26,7 +26,7 @@ export const amenities = [
   },
   {
     heading: 'In-House Restaurant',
-    description: 'The Gallery Hotel’s in-house restaurant KonTiki features a dining experience unlike any other in the region. Award winning food and an extensive and meticulously designed cocktail menu will ensure a memorable experience for all guests. ',
+    description: 'The Gallery Hotel’s in-house restaurant Kon Tiki features a dining experience unlike any other in the region. Award winning food and an extensive and meticulously designed cocktail menu will ensure a memorable experience for all guests. ',
     link: '/eatdrink'
   },
   {

@@ -20,7 +20,7 @@ const ExperienceSection = () => {
       </MainImage>
       <TextContainer>
         <h2>Experience Style & Comfort</h2>
-        <p>The Gallery Hotel’s common areas are open and welcoming to all people. Our bar and lobby operates as a Cocktail Bar from 5pm on Friday and Saturday evenings. During the summer months the courtyard is the heart of the hotel. In both our garden space and restaurant Kontiki we serve an extended Breakfast and Dinner for our inhouse guests as well as our neighbors.</p>
+        <p>The Gallery Hotel’s common areas are open and welcoming to all people. Our bar and lobby operates as a Cocktail Bar from 5pm on Friday and Saturday evenings. During the summer months the courtyard is the heart of the hotel. In both our garden space and restaurant Kon Tiki we serve an extended Breakfast and Dinner for our inhouse guests as well as our neighbors.</p>
       </TextContainer>
       <ImageContainer>
         <Thumbnail 
