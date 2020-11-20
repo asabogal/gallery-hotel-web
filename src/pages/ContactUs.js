@@ -1,6 +1,9 @@
 import React, {useReducer, useEffect} from 'react'
+import { v4 as uuid } from 'uuid';
 import styled from 'styled-components';
 import {Button} from '../components/utils/Buttons';
+// firebase DB
+import {storeRegistration} from '../dbConfig/firebase';
 
 const ContactUs = () => {
 
@@ -16,6 +19,19 @@ const ContactUs = () => {
     }  
   );
 
+  const validEmail = (email) => {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  }
+
+  const addRegistration = () => {
+    const registration = {
+      id: uuid(),
+      email: userInput.email,
+      name: userInput.name,
+    };
+    storeRegistration(registration);
+  }
+
   const handleChange = (e) => {
     const {name, value} = e.target;
     setUserInput({
@@ -25,7 +41,21 @@ const ContactUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert('message sent');
+    if (!validEmail(userInput.email)) {
+      alert("Email can't be blank. Please try again.");
+      setUserInput({
+        ...userInput, email: ''
+      })
+      return;
+    };
+
+    if (userInput.message.length < 10) {
+      alert('Your message is too short. Please try again.')
+      return;
+    };
+
+    addRegistration();
+    alert("Thank you for your message. We'll get back to you shortly.");
   }
 
   return (
@@ -49,7 +79,7 @@ const ContactUs = () => {
           />
           <Input
             placeholder='Email'
-            type='text'
+            type='email'
             name='email'
             value={userInput.email}
             onChange={handleChange}
