@@ -19,11 +19,12 @@ export const firestore = firebase.firestore();
 export const storeRegistration = async (registration) => {
   const ref = firestore.doc(`registrations/${registration.id}`);  
   const {email, name} = registration;
-
+  const registerDate = new Date();
   try {
     await ref.set({
       email,
-      name
+      name,
+      registerDate
     })
   } catch (error) {
     console.log('firebase error', error.message)
