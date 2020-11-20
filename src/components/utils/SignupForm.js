@@ -1,13 +1,32 @@
 import React, {useState} from 'react';
+import { v4 as uuid } from 'uuid';
 import styled from 'styled-components';
 import {Button} from './Buttons';
+
+// firebase DB
+import {storeRegistration} from '../../dbConfig/firebase';
 
 const EmailForm = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
 
+  const validEmail = (email) => {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  }
+  
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!validEmail(email)) {
+      alert("Email can't be blank. Please try again.");
+      setEmail('');
+      return;
+    };
+    const registration = {
+      id: uuid(),
+      email: email,
+      name: name
+    };
+    storeRegistration(registration);
   }
 
   return (
