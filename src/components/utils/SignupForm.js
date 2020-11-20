@@ -27,6 +27,7 @@ const EmailForm = () => {
       name: name
     };
     storeRegistration(registration);
+    alert (`Thank you for registering ${name}. You're one of the cool kids now!`)
   }
 
   return (
