@@ -43,6 +43,7 @@ const ContactUs = () => {
       from_name: name,
       from_email: email,
       name: name,
+      reply_to: email,
       message: message,
     }
 
