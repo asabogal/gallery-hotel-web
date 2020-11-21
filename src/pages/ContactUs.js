@@ -1,5 +1,7 @@
-import React, {useReducer, useEffect} from 'react'
+import React, {useReducer, useEffect} from 'react';
+import {useHistory} from 'react-router-dom';
 import { v4 as uuid } from 'uuid';
+import * as emailjs from 'emailjs-com';
 import styled from 'styled-components';
 import {Button} from '../components/utils/Buttons';
 // firebase DB
@@ -10,6 +12,8 @@ const ContactUs = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   })
+
+  const history = useHistory();
 
   const [userInput, setUserInput] = useReducer((state, newState) => ({...state, ...newState}),
     {
@@ -30,6 +34,24 @@ const ContactUs = () => {
       name: userInput.name,
     };
     storeRegistration(registration);
+  }
+
+  const sendEmail = () => {
+    const {name, email, message} = userInput;
+
+    const emailParams = {
+      from_name: name,
+      from_email: email,
+      name: name,
+      message: message,
+    }
+
+    emailjs.send(
+      'gh_gmail',
+      'template01',
+       emailParams,
+      process.env.REACT_APP_EMAILJS_KEY
+ )
   }
 
   const handleChange = (e) => {
@@ -55,7 +77,9 @@ const ContactUs = () => {
     };
 
     addRegistration();
+    sendEmail();
     alert("Thank you for your message. We'll get back to you shortly.");
+    history.push('/')
   }
 
   return (
