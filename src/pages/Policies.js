@@ -14,7 +14,7 @@ const Policies = () => {
         <ul>
           <li>An initial 50% deposit is required at the time of booking. The remaining 50% is due at check-in.</li>  
           <li>Reservations are not guaranteed without a major credit card authorization at the time of booking. </li>  
-          <li>Check-in between 3pm and 10pm. Please call before 9pm if you require a later check-in time. Additional charges will be applied to check-ins past 12am.</li>
+          <li>Check-in between 3pm and 10pm. Please call before 9pm if you require a later check-in time. Additional charges may apply.</li>
           <li>Check-out is anytime before 11am. </li>
           <h5> * Early Check-in and/or Late Check-out available on request. Additional charges may apply.</h5>
           <li>We assume no responsibility for loss of money, jewels, or other valuables. The Hotel is not responsible for contents left in your room or vehicle on property. The property is not responsible for unclaimed items after more than 14 days from the date it was turned in.</li>
